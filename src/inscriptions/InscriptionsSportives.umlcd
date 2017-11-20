@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="__CUFMM3sEeeZA_1o-037LQ">
+  <modelElement href="InscriptionsSportives.uml#__VGeUM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__czo0c3sEeeZA_1o-037LQ" targetItem="__c5Iac3sEeeZA_1o-037LQ" sourceItem="__czo0M3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__c0P4c3sEeeZA_1o-037LQ" targetItem="__c5Ifs3sEeeZA_1o-037LQ" sourceItem="__c0P4M3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__c028M3sEeeZA_1o-037LQ" targetItem="__c5Ig83sEeeZA_1o-037LQ" sourceItem="__c0P4s3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__c3TMM3sEeeZA_1o-037LQ" sourceAnchor="68.0,0.0" targetAnchor="0.0,97.0" target="__c5Iac3sEeeZA_1o-037LQ" source="__dHx6M3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZRzsc3sEeeZA_1o-037LQ"/>
+    <bendpoints xmi:id="__sjVAM3sEeeZA_1o-037LQ" sourceY="-903" targetX="-105"/>
+    <stereotypes xmi:id="__c3TMc3sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZSawM3sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__c3TMs3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__so0kM3sEeeZA_1o-037LQ" position="-15.124960501502045,715.9950741857175"/>
+    </nameVisual>
+    <sourceRole xmi:id="__c3TM83sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZRzss3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__soNgM3sEeeZA_1o-037LQ" position="2.018783293717874,-72.28398372208312"/>
+      <visibility xmi:id="__c3TNM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c3TNc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__c3TNs3sEeeZA_1o-037LQ" aggregationKind="NONE" name="candidats" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__YlQIM3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__so0kc3sEeeZA_1o-037LQ" position="-134.34797891602483,561.4492359096342"/>
+      <stereotypes xmi:id="__c3TN83sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__YlQIs3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__c3TOM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c3TOc3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__c36QM3sEeeZA_1o-037LQ" sourceAnchor="0.0,249.0" targetAnchor="0.0,37.0" target="__c5Iac3sEeeZA_1o-037LQ" source="__djPsM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZTo4c3sEeeZA_1o-037LQ"/>
+    <bendpoints xmi:id="__skjJM3sEeeZA_1o-037LQ" sourceX="-168" targetX="-998" targetY="692"/>
+    <bendpoints xmi:id="__slKMM3sEeeZA_1o-037LQ" sourceX="-168" sourceY="-692" targetX="-998"/>
+    <stereotypes xmi:id="__c36Qc3sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZTo483sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__c36Qs3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__suUIc3sEeeZA_1o-037LQ" position="7.926298639679771,328.8818394447229"/>
+    </nameVisual>
+    <sourceRole xmi:id="__c36Q83sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZTo4s3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__suUIM3sEeeZA_1o-037LQ" position="-52.9598748361592,-38.170503957962524"/>
+      <visibility xmi:id="__c36RM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c36Rc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__c36Rs3sEeeZA_1o-037LQ" aggregationKind="NONE" name="candidats" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__YuaEM3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__su7MM3sEeeZA_1o-037LQ" position="-1111.2876987660602,653.2085685504925"/>
+      <stereotypes xmi:id="__c36R83sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__YvBIc3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__c36SM3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__c36Sc3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__c4hUM3sEeeZA_1o-037LQ" sourceAnchor="0.0,67.0" targetAnchor="373.0,0.0" target="__djPsM3sEeeZA_1o-037LQ" source="__c5Iac3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZQlkM3sEeeZA_1o-037LQ"/>
+    <bendpoints xmi:id="__sit8M3sEeeZA_1o-037LQ" sourceX="-457" targetY="-413"/>
+    <stereotypes xmi:id="__c4hUc3sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZQlks3sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__c4hUs3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__slxQM3sEeeZA_1o-037LQ" position="281.15339051206524,-4.780601266753607"/>
+    </nameVisual>
+    <sourceRole xmi:id="__c4hU83sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZQlkc3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__slKM83sEeeZA_1o-037LQ" position="-62.287285633062645,-16.8632421013605"/>
+      <visibility xmi:id="__c4hVM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c4hVc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__c4hVs3sEeeZA_1o-037LQ" aggregationKind="NONE" name="inscriptions" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__YiM0c3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__slxQc3sEeeZA_1o-037LQ" position="161.26284630145494,-430.81150636833945"/>
+      <stereotypes xmi:id="_Pvn8wc39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__c4hV83sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__c4hWM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__c5IYM3sEeeZA_1o-037LQ" sourceAnchor="0.0,127.0" targetAnchor="98.0,0.0" target="__dHx6M3sEeeZA_1o-037LQ" source="__c5Iac3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZRMoM3sEeeZA_1o-037LQ"/>
+    <bendpoints xmi:id="__sit8c3sEeeZA_1o-037LQ" sourceX="-75" targetY="-873"/>
+    <stereotypes xmi:id="__c5IYc3sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZRMos3sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__c5IYs3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__sm_Yc3sEeeZA_1o-037LQ" position="-137.6173095886062,-4.984240992555954"/>
+    </nameVisual>
+    <sourceRole xmi:id="__c5IY83sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZRMoc3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__sm_YM3sEeeZA_1o-037LQ" position="-62.704709102780186,-16.98121670628211"/>
+      <visibility xmi:id="__c5IZM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c5IZc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__c5IZs3sEeeZA_1o-037LQ" aggregationKind="NONE" name="competitions" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__Yiz4s3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__sm_Ys3sEeeZA_1o-037LQ" position="-300.0845108214612,-890.931073391668"/>
+      <stereotypes xmi:id="_Pvn8wM39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__c5IZ83sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__c5IaM3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__c_PAc3sEeeZA_1o-037LQ" targetItem="__dHx6M3sEeeZA_1o-037LQ" sourceItem="__c_PAM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__c_PAs3sEeeZA_1o-037LQ" sourceAnchor="343.0,438.0" targetAnchor="0.0,265.0" target="__dHx6M3sEeeZA_1o-037LQ" source="__djPsM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZTB0c3sEeeZA_1o-037LQ"/>
+    <bendpoints xmi:id="__skjI83sEeeZA_1o-037LQ" sourceY="347" targetX="-314"/>
+    <stereotypes xmi:id="__dEuk83sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZTo4M3sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__dEukM3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__sttEM3sEeeZA_1o-037LQ" position="-17.495836222839955,33.64808821185375"/>
+    </nameVisual>
+    <sourceRole xmi:id="__dEukc3sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZTB0s3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__stGAM3sEeeZA_1o-037LQ" position="0.3800357994462047,30.844022830106496"/>
+      <visibility xmi:id="__dF8sc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dF8sM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__dEuks3sEeeZA_1o-037LQ" aggregationKind="NONE" name="competitions" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__Ysk4c3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__sttEc3sEeeZA_1o-037LQ" position="-357.91053361559574,348.7129008805084"/>
+      <stereotypes xmi:id="__dF8tM3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__Ysk4s3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dF8s83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dF8ss3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__c_2EM3sEeeZA_1o-037LQ" sourceAnchor="15.0,0.0" targetAnchor="672.0,438.0" target="__djPsM3sEeeZA_1o-037LQ" source="__dHx6M3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZRMo83sEeeZA_1o-037LQ"/>
+    <stereotypes xmi:id="__dEul83sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZRzsM3sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__dEulM3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__sqCsM3sEeeZA_1o-037LQ" position="-18.128291754873715,-342.35819448482675"/>
+    </nameVisual>
+    <sourceRole xmi:id="__dEulc3sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZRMpM3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__spboM3sEeeZA_1o-037LQ" position="-0.2524197325874695,-69.0839512312142"/>
+      <visibility xmi:id="__dGjwc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dGjwM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__dEuls3sEeeZA_1o-037LQ" aggregationKind="NONE" name="inscriptions" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__YkCAs3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__sqCsc3sEeeZA_1o-037LQ" position="-37.27807808356209,-652.9015125796665"/>
+      <stereotypes xmi:id="_PvnVsc39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__dGjw83sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__dGjws3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dAdIc3sEeeZA_1o-037LQ" targetItem="__dHyKM3sEeeZA_1o-037LQ" sourceItem="__dAdIM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dAdJc3sEeeZA_1o-037LQ" targetItem="__dHyMs3sEeeZA_1o-037LQ" sourceItem="__dAdJM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dCSUM3sEeeZA_1o-037LQ" targetItem="__dHyPM3sEeeZA_1o-037LQ" sourceItem="__dBrQM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dCSUs3sEeeZA_1o-037LQ" targetItem="__dHyRM3sEeeZA_1o-037LQ" sourceItem="__dCSUc3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dC5YM3sEeeZA_1o-037LQ" targetItem="__dHyTM3sEeeZA_1o-037LQ" sourceItem="__dCSU83sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dC5Ys3sEeeZA_1o-037LQ" targetItem="__dHycM3sEeeZA_1o-037LQ" sourceItem="__dC5Yc3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="__dRi4M3sEeeZA_1o-037LQ" sourceAnchor="214.0,0.0" targetAnchor="228.0,254.0" superClass="__c5Iac3sEeeZA_1o-037LQ" subClass="__dYQks3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__YGvAM3sEeeZA_1o-037LQ"/>
+    <bendpoints xmi:id="__sj8EM3sEeeZA_1o-037LQ" sourceY="-30" targetX="37" targetY="80"/>
+    <bendpoints xmi:id="__sj8Ec3sEeeZA_1o-037LQ" sourceX="-37" sourceY="-30" targetY="80"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dRi4s3sEeeZA_1o-037LQ" targetItem="__dYQks3sEeeZA_1o-037LQ" sourceItem="__dRi4c3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__dSJ8M3sEeeZA_1o-037LQ" sourceAnchor="295.0,0.0" targetAnchor="184.0,208.0" target="__dYQks3sEeeZA_1o-037LQ" source="__d08gM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZTo5M3sEeeZA_1o-037LQ"/>
+    <stereotypes xmi:id="__dXCcM3sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZUP8M3sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__dWbYs3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__sviQc3sEeeZA_1o-037LQ" position="-16.329849845119668,-127.26316178320008"/>
+    </nameVisual>
+    <sourceRole xmi:id="__dWbY83sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZTo5c3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__sviQM3sEeeZA_1o-037LQ" position="2.00641170341612,-70.61753384438555"/>
+      <visibility xmi:id="__dXpgc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dXpgM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__dWbZM3sEeeZA_1o-037LQ" aggregationKind="NONE" name="equipes" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__YxdYc3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__swJUM3sEeeZA_1o-037LQ" position="-24.66263107844162,-222.79994714666384"/>
+      <stereotypes xmi:id="__dXphM3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__YyEcM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dXpg83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dXpgs3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__dSJ8c3sEeeZA_1o-037LQ" sourceAnchor="214.0,208.0" targetAnchor="325.0,0.0" target="__d08gM3sEeeZA_1o-037LQ" source="__dYQks3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZSawc3sEeeZA_1o-037LQ"/>
+    <stereotypes xmi:id="__dXCdM3sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZSaw83sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__dXCcc3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__srQ0M3sEeeZA_1o-037LQ" position="-15.933620624796106,124.28184796643677"/>
+    </nameVisual>
+    <sourceRole xmi:id="__dXCcs3sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZSaws3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__sqpwM3sEeeZA_1o-037LQ" position="0.8566974083790342,29.225734116152353"/>
+      <visibility xmi:id="__dXphs3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dXphc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__dXCc83sEeeZA_1o-037LQ" aggregationKind="NONE" name="membres" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__YqIoc3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__srQ0c3sEeeZA_1o-037LQ" position="-29.474259809763225,181.40814741843064"/>
+      <stereotypes xmi:id="_PvnVsM39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__dYQkM3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__dXph83sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dVNQc3sEeeZA_1o-037LQ" targetItem="__dYQns3sEeeZA_1o-037LQ" sourceItem="__dVNQM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dV0Uc3sEeeZA_1o-037LQ" targetItem="__dYQvM3sEeeZA_1o-037LQ" sourceItem="__dV0UM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dWbYc3sEeeZA_1o-037LQ" targetItem="__dYQxM3sEeeZA_1o-037LQ" sourceItem="__dWbYM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__ddwIM3sEeeZA_1o-037LQ" sourceAnchor="343.0,0.0" targetAnchor="0.0,219.0" target="__djPsM3sEeeZA_1o-037LQ" source="__djPsM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZSaxM3sEeeZA_1o-037LQ"/>
+    <bendpoints xmi:id="__skjIM3sEeeZA_1o-037LQ" sourceY="-119" targetX="343" targetY="-338"/>
+    <bendpoints xmi:id="__skjIc3sEeeZA_1o-037LQ" sourceX="-481" sourceY="-119" targetX="-138" targetY="-338"/>
+    <bendpoints xmi:id="__skjIs3sEeeZA_1o-037LQ" sourceX="-481" sourceY="219" targetX="-138"/>
+    <stereotypes xmi:id="__dhag83sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__ZTB0M3sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="__dhagM3sEeeZA_1o-037LQ" text="">
+      <visualProperties xmi:id="__sse8M3sEeeZA_1o-037LQ" position="419.0,-11.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="__dhagc3sEeeZA_1o-037LQ" aggregationKind="NONE" name="">
+      <modelElement href="InscriptionsSportives.uml#__ZSaxc3sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__sr34M3sEeeZA_1o-037LQ" position="-21.0,-60.0"/>
+      <visibility xmi:id="__diooc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__diooM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__dhags3sEeeZA_1o-037LQ" aggregationKind="NONE" name="inscriptions" navigable="true">
+      <modelElement href="InscriptionsSportives.uml#__YrWw83sEeeZA_1o-037LQ"/>
+      <visualProperties xmi:id="__sse8c3sEeeZA_1o-037LQ" position="-96.0,11.5"/>
+      <stereotypes xmi:id="_PvmHkM39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__dioo83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dioos3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__deXMc3sEeeZA_1o-037LQ" targetItem="__djPsM3sEeeZA_1o-037LQ" sourceItem="__deXMM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__de-Qc3sEeeZA_1o-037LQ" targetItem="__djPz83sEeeZA_1o-037LQ" sourceItem="__de-QM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__de-Q83sEeeZA_1o-037LQ" targetItem="__djP1c3sEeeZA_1o-037LQ" sourceItem="__de-Qs3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dflUM3sEeeZA_1o-037LQ" targetItem="__djP283sEeeZA_1o-037LQ" sourceItem="__de-RM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dflUs3sEeeZA_1o-037LQ" targetItem="__djP4c3sEeeZA_1o-037LQ" sourceItem="__dflUc3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dflVM3sEeeZA_1o-037LQ" targetItem="__djP783sEeeZA_1o-037LQ" sourceItem="__dflU83sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dgMYM3sEeeZA_1o-037LQ" targetItem="__djP983sEeeZA_1o-037LQ" sourceItem="__dflVc3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dgMYs3sEeeZA_1o-037LQ" targetItem="__djP_M3sEeeZA_1o-037LQ" sourceItem="__dgMYc3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dgMZM3sEeeZA_1o-037LQ" targetItem="__djQBs3sEeeZA_1o-037LQ" sourceItem="__dgMY83sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dgzcc3sEeeZA_1o-037LQ" targetItem="__djQIs3sEeeZA_1o-037LQ" sourceItem="__dgzcM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="__du14M3sEeeZA_1o-037LQ" sourceAnchor="554.0,0.0" targetAnchor="228.0,254.0" superClass="__c5Iac3sEeeZA_1o-037LQ" subClass="__d08gM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__YP49M3sEeeZA_1o-037LQ"/>
+    <bendpoints xmi:id="__slKMc3sEeeZA_1o-037LQ" sourceY="-293" targetX="266" targetY="80"/>
+    <bendpoints xmi:id="__slKMs3sEeeZA_1o-037LQ" sourceX="-266" sourceY="-293" targetY="80"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dvc8c3sEeeZA_1o-037LQ" targetItem="__d08gM3sEeeZA_1o-037LQ" sourceItem="__dvc8M3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dzHUM3sEeeZA_1o-037LQ" targetItem="__d08l83sEeeZA_1o-037LQ" sourceItem="__dygQM3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__dzHUs3sEeeZA_1o-037LQ" targetItem="__d08nM3sEeeZA_1o-037LQ" sourceItem="__dzHUc3sEeeZA_1o-037LQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_gyox0c39EeeZA_1o-037LQ" targetItem="_gypY4M39EeeZA_1o-037LQ" sourceItem="_gyox0M39EeeZA_1o-037LQ"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__czo0M3sEeeZA_1o-037LQ" sourceConnectionVisual="__czo0c3sEeeZA_1o-037LQ" text="Candidat à un événement sportif, soit une personne physique, soit une équipe.&#xA; *" item="__c5Iac3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZIpwM3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__c0P4M3sEeeZA_1o-037LQ" sourceConnectionVisual="__c0P4c3sEeeZA_1o-037LQ" text="Retourne toutes les compétitions auxquelles ce candidat est inscrit.s&#xA;&#x9; * @return" item="__c5Ifs3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZJQ0M3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__c0P4s3sEeeZA_1o-037LQ" sourceConnectionVisual="__c028M3sEeeZA_1o-037LQ" text="Supprime un candidat de l'application." item="__c5Ig83sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZJQ0c3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__c_PAM3sEeeZA_1o-037LQ" sourceConnectionVisual="__c_PAc3sEeeZA_1o-037LQ" text="Représente une compétition, c'est-à-dire un ensemble de candidats &#xA;inscrits à un événement, les inscriptions sont closes à la date dateCloture.&#xA; *" item="__dHx6M3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZJQ0s3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dAdIM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dAdIc3sEeeZA_1o-037LQ" text="Est vrai si et seulement si les inscriptions sont réservées aux équipes.&#xA;&#x9; * @return" item="__dHyKM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZJ34s3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dAdJM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dAdJc3sEeeZA_1o-037LQ" text="Supprime la compétition de l'application." item="__dHyMs3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZKe883sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dBrQM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dCSUM3sEeeZA_1o-037LQ" text="Inscrit un candidat de type Personne à la compétition. Provoque une&#xA;&#x9; * exception si la compétition est réservée aux équipes ou que les &#xA;&#x9; * inscriptions sont closes.&#xA;&#x9; * @param personne&#xA;&#x9; * @return" item="__dHyPM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZKe8M3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dCSUc3sEeeZA_1o-037LQ" sourceConnectionVisual="__dCSUs3sEeeZA_1o-037LQ" text="Inscrit un candidat de type Equipe à la compétition. Provoque une&#xA;&#x9; * exception si la compétition est réservée aux personnes ou que &#xA;&#x9; * les inscriptions sont closes.&#xA;&#x9; * @param personne&#xA;&#x9; * @return" item="__dHyRM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZKe8c3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dCSU83sEeeZA_1o-037LQ" sourceConnectionVisual="__dC5YM3sEeeZA_1o-037LQ" text="Désinscrit un candidat.&#xA;&#x9; * @param candidat&#xA;&#x9; * @return" item="__dHyTM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZKe8s3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dC5Yc3sEeeZA_1o-037LQ" sourceConnectionVisual="__dC5Ys3sEeeZA_1o-037LQ" text="Retourne vrai si les inscriptions sont encore ouvertes, &#xA;&#x9; * faux si les inscriptions sont closes.&#xA;&#x9; * @return" item="__dHycM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZJ34c3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dRi4c3sEeeZA_1o-037LQ" sourceConnectionVisual="__dRi4s3sEeeZA_1o-037LQ" text="Représente une Equipe. C'est-à-dire un ensemble de personnes pouvant &#xA;s'inscrire à une compétition.&#xA; *" item="__dYQks3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZKe9M3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dVNQM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dVNQc3sEeeZA_1o-037LQ" text="Retourne l'ensemble des personnes formant l'équipe." item="__dYQns3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZKe9c3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dV0UM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dV0Uc3sEeeZA_1o-037LQ" text="Ajoute une personne dans l'équipe.&#xA;&#x9; * @param membre&#xA;&#x9; * @return" item="__dYQvM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZKe9s3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dWbYM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dWbYc3sEeeZA_1o-037LQ" text="Supprime une personne de l'équipe. &#xA;&#x9; * @param membre&#xA;&#x9; * @return" item="__dYQxM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZKe983sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__deXMM3sEeeZA_1o-037LQ" sourceConnectionVisual="__deXMc3sEeeZA_1o-037LQ" text="Point d'entrée dans l'application, un seul objet de type Inscription&#xA;permet de gérer les compétitions, candidats (de type equipe ou personne)&#xA;ainsi que d'inscrire des candidats à des compétition." item="__djPsM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGAM3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__de-QM3sEeeZA_1o-037LQ" sourceConnectionVisual="__de-Qc3sEeeZA_1o-037LQ" text="Retourne tous les candidats (personnes et équipes confondues).&#xA;&#x9; * @return" item="__djPz83sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGAc3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__de-Qs3sEeeZA_1o-037LQ" sourceConnectionVisual="__de-Q83sEeeZA_1o-037LQ" text="Retourne toutes les personnes.&#xA;&#x9; * @return" item="__djP1c3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGAs3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__de-RM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dflUM3sEeeZA_1o-037LQ" text="Retourne toutes les équipes.&#xA;&#x9; * @return" item="__djP283sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGA83sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dflUc3sEeeZA_1o-037LQ" sourceConnectionVisual="__dflUs3sEeeZA_1o-037LQ" text="Créée une Candidat de type Personne. Ceci est le seul moyen, il n'y a pas&#xA;&#x9; * de constructeur public dans {@link Personne}.&#xA;&#xA;&#x9; * @param nom&#xA;&#x9; * @param prenom&#xA;&#x9; * @param mail&#xA;&#x9; * @return" item="__djP4c3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGBc3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dflU83sEeeZA_1o-037LQ" sourceConnectionVisual="__dflVM3sEeeZA_1o-037LQ" text="Créée une Candidat de type équipe. Ceci est le seul moyen, il n'y a pas&#xA;&#x9; * de constructeur public dans {@link Equipe}.&#xA;&#x9; * @param nom&#xA;&#x9; * @param prenom&#xA;&#x9; * @param mail&#xA;&#x9; * @return" item="__djP783sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGBs3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dflVc3sEeeZA_1o-037LQ" sourceConnectionVisual="__dgMYM3sEeeZA_1o-037LQ" text="Retourne un object inscriptions vide. Ne modifie pas les compétitions&#xA;&#x9; * et candidats déjà existants." item="__djP983sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGB83sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dgMYc3sEeeZA_1o-037LQ" sourceConnectionVisual="__dgMYs3sEeeZA_1o-037LQ" text="Efface toutes les modifications sur Inscriptions depuis la dernière sauvegarde.&#xA;&#x9; * Ne modifie pas les compétitions et candidats déjà existants." item="__djP_M3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGCM3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dgMY83sEeeZA_1o-037LQ" sourceConnectionVisual="__dgMZM3sEeeZA_1o-037LQ" text="Sauvegarde le gestionnaire pour qu'il soit ouvert automatiquement &#xA;&#x9; * lors d'une exécution ultérieure du programme.&#xA;&#x9; * @throws IOException" item="__djQBs3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLtEM3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dgzcM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dgzcc3sEeeZA_1o-037LQ" text="Créée une compétition. Ceci est le seul moyen, il n'y a pas&#xA;&#x9; * de constructeur public dans {@link Competition}.&#xA;&#x9; * @param nom&#xA;&#x9; * @param dateCloture&#xA;&#x9; * @param enEquipe&#xA;&#x9; * @return" item="__djQIs3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLGBM3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dvc8M3sEeeZA_1o-037LQ" sourceConnectionVisual="__dvc8c3sEeeZA_1o-037LQ" text="Représente une personne physique pouvant s'inscrire à une compétition." item="__d08gM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZLtEc3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dygQM3sEeeZA_1o-037LQ" sourceConnectionVisual="__dzHUM3sEeeZA_1o-037LQ" text="Retourne l'adresse électronique de la personne.&#xA;&#x9; * @return" item="__d08l83sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZMUIM3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__dzHUc3sEeeZA_1o-037LQ" sourceConnectionVisual="__dzHUs3sEeeZA_1o-037LQ" text="Modifie l'adresse électronique de la personne.&#xA;&#x9; * @param mail" item="__d08nM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZMUIc3sEeeZA_1o-037LQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="__c5Iac3sEeeZA_1o-037LQ" comments="__czo0M3sEeeZA_1o-037LQ" targetConnectionVisual="__czo0c3sEeeZA_1o-037LQ" name="Candidat" abstractClass="true" associationsIn="__c3TMM3sEeeZA_1o-037LQ __c36QM3sEeeZA_1o-037LQ" associationsOut="__c4hUM3sEeeZA_1o-037LQ __c5IYM3sEeeZA_1o-037LQ" subclassedBy="__dRi4M3sEeeZA_1o-037LQ __du14M3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__WAdQM3sEeeZA_1o-037LQ"/>
+    <visualProperties xmi:id="__c5Ias3sEeeZA_1o-037LQ" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="__c5Ia83sEeeZA_1o-037LQ" label="+"/>
+    <attributes xmi:id="__c5IbM3sEeeZA_1o-037LQ" defaultValue="-6035399822298694746L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="InscriptionsSportives.uml#__YhlwM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__c5Ibc3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__c5Ibs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__c5Ib83sEeeZA_1o-037LQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__c5IcM3sEeeZA_1o-037LQ" name="inscriptions">
+      <modelElement href="InscriptionsSportives.uml#__YiM0c3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__c5Icc3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__Yiz4M3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__c5Ics3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__c5Ic83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__c5IdM3sEeeZA_1o-037LQ" name="Inscriptions">
+        <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__c5Idc3sEeeZA_1o-037LQ" name="nom">
+      <modelElement href="InscriptionsSportives.uml#__Yiz4c3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__c5Ids3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c5Id83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__c5IeM3sEeeZA_1o-037LQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__c5Iec3sEeeZA_1o-037LQ" name="competitions">
+      <modelElement href="InscriptionsSportives.uml#__Yiz4s3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__c5Ies3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__Yja8M3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__c5Ie83sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__c5IfM3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="__c5Ifc3sEeeZA_1o-037LQ" name="Competition">
+        <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="__c5Ifs3sEeeZA_1o-037LQ" comments="__c0P4M3sEeeZA_1o-037LQ" targetConnectionVisual="__c0P4c3sEeeZA_1o-037LQ" name="getCompetitions">
+      <modelElement href="InscriptionsSportives.uml#__WCScM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__c5If83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c5IgM3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="__c5Igc3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__WCScc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__c5Igs3sEeeZA_1o-037LQ" name="Competition">
+          <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__c5Ig83sEeeZA_1o-037LQ" comments="__c0P4s3sEeeZA_1o-037LQ" targetConnectionVisual="__c028M3sEeeZA_1o-037LQ" name="delete">
+      <modelElement href="InscriptionsSportives.uml#__WDgkM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__c5IhM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c5Ihc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="__c5Ihs3sEeeZA_1o-037LQ" name="toString">
+      <modelElement href="InscriptionsSportives.uml#__WEHoM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__c5Ih83sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__WEusM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__c5IiM3sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__WEusc3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__c5Iic3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c5Iis3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__c5Ii83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__WEHoc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__c5IjM3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__c5Ijc3sEeeZA_1o-037LQ" name="Candidat">
+      <modelElement href="InscriptionsSportives.uml#__XvioM3sEeeZA_1o-037LQ"/>
+      <keywords xmi:id="__c5Ijs3sEeeZA_1o-037LQ" keyword="create"/>
+      <visibility xmi:id="__c5Ij83sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__c5IkM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__c5Ikc3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__X4FgM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__c5Iks3sEeeZA_1o-037LQ" name="Candidat">
+          <modelElement href="InscriptionsSportives.uml#__WAdQM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__c5Ik83sEeeZA_1o-037LQ" name="inscriptions">
+        <modelElement href="InscriptionsSportives.uml#__Xvioc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__c5IlM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__c5Ilc3sEeeZA_1o-037LQ" name="Inscriptions">
+          <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__c5Ils3sEeeZA_1o-037LQ" name="nom">
+        <modelElement href="InscriptionsSportives.uml#__Xvios3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__c5Il83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__c5ImM3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__c5Imc3sEeeZA_1o-037LQ" name="add">
+      <modelElement href="InscriptionsSportives.uml#__X4Fgc3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__c5Ims3sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__c5Im83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__c5InM3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__X4skc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__c5Inc3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__c5Ins3sEeeZA_1o-037LQ" name="competition">
+        <modelElement href="InscriptionsSportives.uml#__X4skM3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__c5In83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__c5IoM3sEeeZA_1o-037LQ" name="Competition">
+          <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__c5Ioc3sEeeZA_1o-037LQ" name="remove">
+      <modelElement href="InscriptionsSportives.uml#__X4sks3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__c5Ios3sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__c5Io83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__c5IpM3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__X4slM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__c5Ipc3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__c5Ips3sEeeZA_1o-037LQ" name="competition">
+        <modelElement href="InscriptionsSportives.uml#__X4sk83sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__c5Ip83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__c5IqM3sEeeZA_1o-037LQ" name="Competition">
+          <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__c5Iqc3sEeeZA_1o-037LQ" name="compareTo">
+      <modelElement href="InscriptionsSportives.uml#__X5ToM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__c5Iqs3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__X5To83sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__c5Iq83sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__X56sM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__c5IrM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__c5vcM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__c5vcc3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__X5Tos3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__c5vcs3sEeeZA_1o-037LQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__c5vc83sEeeZA_1o-037LQ" name="o">
+        <modelElement href="InscriptionsSportives.uml#__X5Toc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__c5vdM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__c5vdc3sEeeZA_1o-037LQ" name="Candidat">
+          <modelElement href="InscriptionsSportives.uml#__WAdQM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="__dHx6M3sEeeZA_1o-037LQ" comments="__c_PAM3sEeeZA_1o-037LQ" targetConnectionVisual="__c_PAc3sEeeZA_1o-037LQ" name="Competition" associationsIn="__c5IYM3sEeeZA_1o-037LQ __c_PAs3sEeeZA_1o-037LQ" associationsOut="__c3TMM3sEeeZA_1o-037LQ __c_2EM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+    <visualProperties xmi:id="__dHx6c3sEeeZA_1o-037LQ" position="-143.0,1030.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="__dHx6s3sEeeZA_1o-037LQ" label="+"/>
+    <attributes xmi:id="__dHx683sEeeZA_1o-037LQ" defaultValue="-2882150118573759729L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="InscriptionsSportives.uml#__YkCAM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHx7M3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__dHx7c3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__dHx7s3sEeeZA_1o-037LQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__dHx783sEeeZA_1o-037LQ" name="inscriptions">
+      <modelElement href="InscriptionsSportives.uml#__YkCAs3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__dHx8M3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__YkpEM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dHx8c3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__dHx8s3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__dHx883sEeeZA_1o-037LQ" name="Inscriptions">
+        <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__dHx9M3sEeeZA_1o-037LQ" name="nom">
+      <modelElement href="InscriptionsSportives.uml#__YkpEc3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHx9c3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHx9s3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__dHx983sEeeZA_1o-037LQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__dHx-M3sEeeZA_1o-037LQ" name="candidats">
+      <modelElement href="InscriptionsSportives.uml#__YlQIM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="_PvjrUM39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_gyp_8M39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_gyqnAM39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__dHx-c3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHx-s3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="__dHx-83sEeeZA_1o-037LQ" name="Candidat">
+        <modelElement href="InscriptionsSportives.uml#__WAdQM3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__dHx_M3sEeeZA_1o-037LQ" name="dateCloture">
+      <modelElement href="InscriptionsSportives.uml#__YlQI83sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHx_c3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHx_s3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__dHx_83sEeeZA_1o-037LQ" name="LocalDate">
+        <modelElement href="InscriptionsSportives.uml#__X8-Ac3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__dHyAM3sEeeZA_1o-037LQ" defaultValue="false" name="enEquipe">
+      <modelElement href="InscriptionsSportives.uml#__Yl3MM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__dHyAc3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__Yl3Ms3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dHyAs3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__dHyA83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__dHyBM3sEeeZA_1o-037LQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="__dHyKM3sEeeZA_1o-037LQ" comments="__dAdIM3sEeeZA_1o-037LQ" targetConnectionVisual="__dAdIc3sEeeZA_1o-037LQ" name="estEnEquipe">
+      <modelElement href="InscriptionsSportives.uml#__WK1UM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHyKc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHyKs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dHyK83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__WK1Uc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dHyLM3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__dHyMs3sEeeZA_1o-037LQ" comments="__dAdJM3sEeeZA_1o-037LQ" targetConnectionVisual="__dAdJc3sEeeZA_1o-037LQ" name="delete">
+      <modelElement href="InscriptionsSportives.uml#__WMDcM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHyM83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHyNM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="__dHyNc3sEeeZA_1o-037LQ" name="toString">
+      <modelElement href="InscriptionsSportives.uml#__Was8M3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__dHyNs3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__WbUAM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__dHyN83sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__WbUAc3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dHyOM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHyOc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dHyOs3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__Was8c3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dHyO83sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__dHyPM3sEeeZA_1o-037LQ" comments="__dBrQM3sEeeZA_1o-037LQ" targetConnectionVisual="__dCSUM3sEeeZA_1o-037LQ" name="add">
+      <modelElement href="InscriptionsSportives.uml#__X-zMM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHyPc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHyPs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dHyP83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__X-zMs3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dHyQM3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dHyQc3sEeeZA_1o-037LQ" name="personne">
+        <modelElement href="InscriptionsSportives.uml#__X-zMc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHyQs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHyQ83sEeeZA_1o-037LQ" name="Personne">
+          <modelElement href="InscriptionsSportives.uml#__XK64M3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__dHyRM3sEeeZA_1o-037LQ" comments="__dCSUc3sEeeZA_1o-037LQ" targetConnectionVisual="__dCSUs3sEeeZA_1o-037LQ" name="add">
+      <modelElement href="InscriptionsSportives.uml#__X_aQM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHyRc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHyRs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dHyR83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__X_aQs3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dHySM3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dHySc3sEeeZA_1o-037LQ" name="equipe">
+        <modelElement href="InscriptionsSportives.uml#__X_aQc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHySs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHyS83sEeeZA_1o-037LQ" name="Equipe">
+          <modelElement href="InscriptionsSportives.uml#__W2x0M3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__dHyTM3sEeeZA_1o-037LQ" comments="__dCSU83sEeeZA_1o-037LQ" targetConnectionVisual="__dC5YM3sEeeZA_1o-037LQ" name="remove">
+      <modelElement href="InscriptionsSportives.uml#__X_aQ83sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHyTc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHyTs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dHyT83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__X_aRc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dHyUM3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dHyUc3sEeeZA_1o-037LQ" name="candidat">
+        <modelElement href="InscriptionsSportives.uml#__X_aRM3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHyUs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHyU83sEeeZA_1o-037LQ" name="Candidat">
+          <modelElement href="InscriptionsSportives.uml#__WAdQM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__dHyVM3sEeeZA_1o-037LQ" name="compareTo">
+      <modelElement href="InscriptionsSportives.uml#__YABUM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__dHyVc3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__YABU83sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__dHyVs3sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__YABVM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dHyV83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHyWM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dHyWc3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YABUs3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dHyWs3sEeeZA_1o-037LQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dHyW83sEeeZA_1o-037LQ" name="o">
+        <modelElement href="InscriptionsSportives.uml#__YABUc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHyXM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHyXc3sEeeZA_1o-037LQ" name="Competition">
+          <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__dHyXs3sEeeZA_1o-037LQ" name="Competition">
+      <modelElement href="InscriptionsSportives.uml#__YX0wM3sEeeZA_1o-037LQ"/>
+      <keywords xmi:id="__dHyX83sEeeZA_1o-037LQ" keyword="create"/>
+      <visibility xmi:id="__dHyYM3sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__dHyYc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dHyYs3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YYb1M3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dHyY83sEeeZA_1o-037LQ" name="Competition">
+          <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dHyZM3sEeeZA_1o-037LQ" name="inscriptions">
+        <modelElement href="InscriptionsSportives.uml#__YX0wc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHyZc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHyZs3sEeeZA_1o-037LQ" name="Inscriptions">
+          <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__dHyZ83sEeeZA_1o-037LQ" name="nom">
+        <modelElement href="InscriptionsSportives.uml#__YX0ws3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHyaM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHyac3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__dHyas3sEeeZA_1o-037LQ" name="dateCloture">
+        <modelElement href="InscriptionsSportives.uml#__YYb0M3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHya83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHybM3sEeeZA_1o-037LQ" name="LocalDate">
+          <modelElement href="InscriptionsSportives.uml#__X8-Ac3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__dHybc3sEeeZA_1o-037LQ" name="enEquipe">
+        <modelElement href="InscriptionsSportives.uml#__YYb0c3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHybs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHyb83sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__dHycM3sEeeZA_1o-037LQ" comments="__dC5Yc3sEeeZA_1o-037LQ" targetConnectionVisual="__dC5Ys3sEeeZA_1o-037LQ" name="inscriptionsOuvertes">
+      <modelElement href="InscriptionsSportives.uml#__YYb1c3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dHycc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dHycs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dHyc83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YZC4c3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dHydM3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dHydc3sEeeZA_1o-037LQ" name="dateCloture">
+        <modelElement href="InscriptionsSportives.uml#__YZC4M3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dHyds3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dHyd83sEeeZA_1o-037LQ" name="LocalDate">
+          <modelElement href="InscriptionsSportives.uml#__X8-Ac3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_gypY4M39EeeZA_1o-037LQ" comments="_gyox0M39EeeZA_1o-037LQ" targetConnectionVisual="_gyox0c39EeeZA_1o-037LQ" name="setDateCloture">
+      <modelElement href="InscriptionsSportives.uml#_gyg2AM39EeeZA_1o-037LQ"/>
+      <visibility xmi:id="_gypY4c39EeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="_gypY4s39EeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_gypY4839EeeZA_1o-037LQ" name="dateCloture">
+        <modelElement href="InscriptionsSportives.uml#_gyhdEM39EeeZA_1o-037LQ"/>
+        <cardinality xmi:id="_gypY5M39EeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="_gypY5c39EeeZA_1o-037LQ" name="LocalDate">
+          <modelElement href="InscriptionsSportives.uml#__X8-Ac3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_gypY5s39EeeZA_1o-037LQ" name="newdateCloture">
+        <modelElement href="InscriptionsSportives.uml#_gyhdEc39EeeZA_1o-037LQ"/>
+        <cardinality xmi:id="_gypY5839EeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="_gypY6M39EeeZA_1o-037LQ" name="LocalDate">
+          <modelElement href="InscriptionsSportives.uml#__X8-Ac3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="__dYQks3sEeeZA_1o-037LQ" comments="__dRi4c3sEeeZA_1o-037LQ" targetConnectionVisual="__dRi4s3sEeeZA_1o-037LQ" name="Equipe" associationsIn="__dSJ8M3sEeeZA_1o-037LQ" associationsOut="__dSJ8c3sEeeZA_1o-037LQ" generalizations="__dRi4M3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__W2x0M3sEeeZA_1o-037LQ"/>
+    <visualProperties xmi:id="__dYQk83sEeeZA_1o-037LQ" position="81.0,394.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="__dYQlM3sEeeZA_1o-037LQ" label="+"/>
+    <attributes xmi:id="__dYQlc3sEeeZA_1o-037LQ" defaultValue="4147819927233466035L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="InscriptionsSportives.uml#__YphkM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dYQls3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__dYQl83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__dYQmM3sEeeZA_1o-037LQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__dYQmc3sEeeZA_1o-037LQ" defaultValue="new TreeSet&lt;>()" name="membres">
+      <modelElement href="InscriptionsSportives.uml#__YqIoc3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__dYQms3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__YqvsM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dYQm83sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__dYQnM3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="__dYQnc3sEeeZA_1o-037LQ" name="Personne">
+        <modelElement href="InscriptionsSportives.uml#__XK64M3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="__dYQns3sEeeZA_1o-037LQ" comments="__dVNQM3sEeeZA_1o-037LQ" targetConnectionVisual="__dVNQc3sEeeZA_1o-037LQ" name="getMembres">
+      <modelElement href="InscriptionsSportives.uml#__W6cMM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__dYQn83sEeeZA_1o-037LQ" name="Generics">
+        <modelElement href="InscriptionsSportives.uml#__W7DQM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dYQoM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dYQoc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dYQos3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YbfIM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dYQo83sEeeZA_1o-037LQ" name="SortedSet">
+          <modelElement href="InscriptionsSportives.uml#__YDrsM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__dYQpM3sEeeZA_1o-037LQ" name="delete">
+      <modelElement href="InscriptionsSportives.uml#__W7qUM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__dYQpc3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__W8RYM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__dYQps3sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__W8RYc3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dYQp83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dYQqM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="__dYQqc3sEeeZA_1o-037LQ" name="toString">
+      <modelElement href="InscriptionsSportives.uml#__W8RY83sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__dYQqs3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__W9fgc3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__dYQq83sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__W9fgs3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__dYQrM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dYQrc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dYQrs3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__W9fgM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dYQr83sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__dYQsM3sEeeZA_1o-037LQ" name="Equipe">
+      <modelElement href="InscriptionsSportives.uml#__YE50M3sEeeZA_1o-037LQ"/>
+      <keywords xmi:id="__dYQsc3sEeeZA_1o-037LQ" keyword="create"/>
+      <visibility xmi:id="__dYQss3sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__dYQs83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dYQtM3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YE51c3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dYQtc3sEeeZA_1o-037LQ" name="Equipe">
+          <modelElement href="InscriptionsSportives.uml#__W2x0M3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dYQts3sEeeZA_1o-037LQ" name="inscriptions">
+        <modelElement href="InscriptionsSportives.uml#__YE50c3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dYQt83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dYQuM3sEeeZA_1o-037LQ" name="Inscriptions">
+          <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__dYQuc3sEeeZA_1o-037LQ" name="nom">
+        <modelElement href="InscriptionsSportives.uml#__YE50s3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dYQus3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dYQu83sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__dYQvM3sEeeZA_1o-037LQ" comments="__dV0UM3sEeeZA_1o-037LQ" targetConnectionVisual="__dV0Uc3sEeeZA_1o-037LQ" name="add">
+      <modelElement href="InscriptionsSportives.uml#__YFg4M3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dYQvc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dYQvs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dYQv83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YGH8M3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dYQwM3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dYQwc3sEeeZA_1o-037LQ" name="membre">
+        <modelElement href="InscriptionsSportives.uml#__YFg4c3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dYQws3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dYQw83sEeeZA_1o-037LQ" name="Personne">
+          <modelElement href="InscriptionsSportives.uml#__XK64M3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__dYQxM3sEeeZA_1o-037LQ" comments="__dWbYM3sEeeZA_1o-037LQ" targetConnectionVisual="__dWbYc3sEeeZA_1o-037LQ" name="remove">
+      <modelElement href="InscriptionsSportives.uml#__YGH8c3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__dYQxc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__dYQxs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__dYQx83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YGH883sEeeZA_1o-037LQ"/>
+        <type xmi:id="__dYQyM3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__dYQyc3sEeeZA_1o-037LQ" name="membre">
+        <modelElement href="InscriptionsSportives.uml#__YGH8s3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__dYQys3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__dYQy83sEeeZA_1o-037LQ" name="Personne">
+          <modelElement href="InscriptionsSportives.uml#__XK64M3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="__djPsM3sEeeZA_1o-037LQ" comments="__deXMM3sEeeZA_1o-037LQ" targetConnectionVisual="__deXMc3sEeeZA_1o-037LQ" name="Inscriptions" associationsIn="__ddwIM3sEeeZA_1o-037LQ __c4hUM3sEeeZA_1o-037LQ __c_2EM3sEeeZA_1o-037LQ" associationsOut="__ddwIM3sEeeZA_1o-037LQ __c_PAs3sEeeZA_1o-037LQ __c36QM3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+    <visualProperties xmi:id="__djPsc3sEeeZA_1o-037LQ" position="-800.0,510.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="__djPss3sEeeZA_1o-037LQ" label="+"/>
+    <attributes xmi:id="__djPs83sEeeZA_1o-037LQ" defaultValue="-3095339436048473524L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="InscriptionsSportives.uml#__Yqvsc3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djPtM3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__djPtc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__djPts3sEeeZA_1o-037LQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__djPt83sEeeZA_1o-037LQ" defaultValue="&quot;Inscriptions.srz&quot;" name="FILE_NAME" staticAttribute="true">
+      <modelElement href="InscriptionsSportives.uml#__YrWwc3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djPuM3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__djPuc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__djPus3sEeeZA_1o-037LQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__djPu83sEeeZA_1o-037LQ" name="inscriptions" staticAttribute="true">
+      <modelElement href="InscriptionsSportives.uml#__YrWw83sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__djPvM3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__YrWxM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__djPvc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djPvs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__djPv83sEeeZA_1o-037LQ" name="Inscriptions">
+        <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__djPwM3sEeeZA_1o-037LQ" defaultValue="new TreeSet&lt;>()" name="competitions">
+      <modelElement href="InscriptionsSportives.uml#__Ysk4c3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="_PvgoAc39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__djPwc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djPws3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="__djPw83sEeeZA_1o-037LQ" name="Competition">
+        <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__djPxM3sEeeZA_1o-037LQ" defaultValue="new TreeSet&lt;>()" name="candidats">
+      <modelElement href="InscriptionsSportives.uml#__YuaEM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="_PvgoAM39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__djPxc3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__djPxs3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="__djPx83sEeeZA_1o-037LQ" name="Candidat">
+        <modelElement href="InscriptionsSportives.uml#__WAdQM3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="__djPyM3sEeeZA_1o-037LQ" name="Inscriptions">
+      <modelElement href="InscriptionsSportives.uml#__XBJ4M3sEeeZA_1o-037LQ"/>
+      <keywords xmi:id="__djPyc3sEeeZA_1o-037LQ" keyword="create"/>
+      <stereotypes xmi:id="__djPys3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__XBJ483sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__djPy83sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__djPzM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djPzc3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__XBJ5M3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djPzs3sEeeZA_1o-037LQ" name="Inscriptions">
+          <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__djPz83sEeeZA_1o-037LQ" comments="__de-QM3sEeeZA_1o-037LQ" targetConnectionVisual="__de-Qc3sEeeZA_1o-037LQ" name="getCandidats">
+      <modelElement href="InscriptionsSportives.uml#__XBw8M3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__djP0M3sEeeZA_1o-037LQ" name="Generics">
+        <modelElement href="InscriptionsSportives.uml#__XBw8c3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__djP0c3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djP0s3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djP083sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YctQM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djP1M3sEeeZA_1o-037LQ" name="SortedSet">
+          <modelElement href="InscriptionsSportives.uml#__YDrsM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__djP1c3sEeeZA_1o-037LQ" comments="__de-Qs3sEeeZA_1o-037LQ" targetConnectionVisual="__de-Q83sEeeZA_1o-037LQ" name="getPersonnes">
+      <modelElement href="InscriptionsSportives.uml#__XCYAM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__djP1s3sEeeZA_1o-037LQ" name="Generics">
+        <modelElement href="InscriptionsSportives.uml#__XCYAc3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__djP183sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djP2M3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djP2c3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YdUUM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djP2s3sEeeZA_1o-037LQ" name="SortedSet">
+          <modelElement href="InscriptionsSportives.uml#__YDrsM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__djP283sEeeZA_1o-037LQ" comments="__de-RM3sEeeZA_1o-037LQ" targetConnectionVisual="__dflUM3sEeeZA_1o-037LQ" name="getEquipes">
+      <modelElement href="InscriptionsSportives.uml#__XC_EM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__djP3M3sEeeZA_1o-037LQ" name="Generics">
+        <modelElement href="InscriptionsSportives.uml#__XC_Ec3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__djP3c3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djP3s3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djP383sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YdUUc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djP4M3sEeeZA_1o-037LQ" name="SortedSet">
+          <modelElement href="InscriptionsSportives.uml#__YDrsM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__djP4c3sEeeZA_1o-037LQ" comments="__dflUc3sEeeZA_1o-037LQ" targetConnectionVisual="__dflUs3sEeeZA_1o-037LQ" name="createPersonne">
+      <modelElement href="InscriptionsSportives.uml#__XDmIM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djP4s3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djP483sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djP5M3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YLAcM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djP5c3sEeeZA_1o-037LQ" name="Personne">
+          <modelElement href="InscriptionsSportives.uml#__XK64M3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__djP5s3sEeeZA_1o-037LQ" name="nom">
+        <modelElement href="InscriptionsSportives.uml#__XENMM3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djP583sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djP6M3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__djP6c3sEeeZA_1o-037LQ" name="prenom">
+        <modelElement href="InscriptionsSportives.uml#__XENMc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djP6s3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djP683sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__djP7M3sEeeZA_1o-037LQ" name="mail">
+        <modelElement href="InscriptionsSportives.uml#__XENMs3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djP7c3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djP7s3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__djP783sEeeZA_1o-037LQ" comments="__dflU83sEeeZA_1o-037LQ" targetConnectionVisual="__dflVM3sEeeZA_1o-037LQ" name="createEquipe">
+      <modelElement href="InscriptionsSportives.uml#__XENM83sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djP8M3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djP8c3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djP8s3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YLAcc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djP883sEeeZA_1o-037LQ" name="Equipe">
+          <modelElement href="InscriptionsSportives.uml#__W2x0M3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__djP9M3sEeeZA_1o-037LQ" name="nom">
+        <modelElement href="InscriptionsSportives.uml#__XENNM3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djP9c3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djP9s3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__djP983sEeeZA_1o-037LQ" comments="__dflVc3sEeeZA_1o-037LQ" targetConnectionVisual="__dgMYM3sEeeZA_1o-037LQ" name="reinitialiser">
+      <modelElement href="InscriptionsSportives.uml#__XE0QM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djP-M3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djP-c3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djP-s3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YMOkM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djP-83sEeeZA_1o-037LQ" name="Inscriptions">
+          <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__djP_M3sEeeZA_1o-037LQ" comments="__dgMYc3sEeeZA_1o-037LQ" targetConnectionVisual="__dgMYs3sEeeZA_1o-037LQ" name="recharger">
+      <modelElement href="InscriptionsSportives.uml#__XE0Qc3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djP_c3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djP_s3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djP_83sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YMOkc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djQAM3sEeeZA_1o-037LQ" name="Inscriptions">
+          <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__djQAc3sEeeZA_1o-037LQ" name="readObject" staticOperation="true">
+      <modelElement href="InscriptionsSportives.uml#__XFbUM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djQAs3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__djQA83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djQBM3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YMOks3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djQBc3sEeeZA_1o-037LQ" name="Inscriptions">
+          <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__djQBs3sEeeZA_1o-037LQ" comments="__dgMY83sEeeZA_1o-037LQ" targetConnectionVisual="__dgMZM3sEeeZA_1o-037LQ" name="sauvegarder">
+      <modelElement href="InscriptionsSportives.uml#__XFbUc3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djQB83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djQCM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="__djQCc3sEeeZA_1o-037LQ" name="toString">
+      <modelElement href="InscriptionsSportives.uml#__XFbUs3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__djQCs3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__XGCYc3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__djQC83sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__XGCYs3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__djQDM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djQDc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djQDs3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__XGCYM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djQD83sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__djQEM3sEeeZA_1o-037LQ" name="main" staticOperation="true">
+      <modelElement href="InscriptionsSportives.uml#__XGpcM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djQEc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djQEs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="__djQE83sEeeZA_1o-037LQ" name="args">
+        <modelElement href="InscriptionsSportives.uml#__XGpcc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djQFM3sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="__djQFc3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__djQFs3sEeeZA_1o-037LQ" name="remove">
+      <modelElement href="InscriptionsSportives.uml#__YLAcs3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djQF83sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__djQGM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="__djQGc3sEeeZA_1o-037LQ" name="competition">
+        <modelElement href="InscriptionsSportives.uml#__YLAc83sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djQGs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djQG83sEeeZA_1o-037LQ" name="Competition">
+          <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__djQHM3sEeeZA_1o-037LQ" name="remove">
+      <modelElement href="InscriptionsSportives.uml#__YLngM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djQHc3sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__djQHs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="__djQH83sEeeZA_1o-037LQ" name="candidat">
+        <modelElement href="InscriptionsSportives.uml#__YLngc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djQIM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djQIc3sEeeZA_1o-037LQ" name="Candidat">
+          <modelElement href="InscriptionsSportives.uml#__WAdQM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__djQIs3sEeeZA_1o-037LQ" comments="__dgzcM3sEeeZA_1o-037LQ" targetConnectionVisual="__dgzcc3sEeeZA_1o-037LQ" name="createCompetition">
+      <modelElement href="InscriptionsSportives.uml#__YdUUs3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__djQI83sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__djQJM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__djQJc3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__Yd7YM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__djQJs3sEeeZA_1o-037LQ" name="Competition">
+          <modelElement href="InscriptionsSportives.uml#__WIZEM3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__djQJ83sEeeZA_1o-037LQ" name="nom">
+        <modelElement href="InscriptionsSportives.uml#__YdUU83sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djQKM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djQKc3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__djQKs3sEeeZA_1o-037LQ" name="dateCloture">
+        <modelElement href="InscriptionsSportives.uml#__YdUVM3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djQK83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djQLM3sEeeZA_1o-037LQ" name="LocalDate">
+          <modelElement href="InscriptionsSportives.uml#__X8-Ac3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__djQLc3sEeeZA_1o-037LQ" name="enEquipe">
+        <modelElement href="InscriptionsSportives.uml#__YdUVc3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__djQLs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__djQL83sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="__dtnwM3sEeeZA_1o-037LQ" name="IOException">
+    <modelElement href="InscriptionsSportives.uml#__YIkMM3sEeeZA_1o-037LQ"/>
+    <visualProperties xmi:id="__dtnwc3sEeeZA_1o-037LQ" position="398.0,-134.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="__dtnws3sEeeZA_1o-037LQ" name="Reference">
+      <modelElement href="InscriptionsSportives.uml#__YIkMc3sEeeZA_1o-037LQ"/>
+    </stereotypes>
+    <visibility xmi:id="__dtnw83sEeeZA_1o-037LQ" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="__d08gM3sEeeZA_1o-037LQ" comments="__dvc8M3sEeeZA_1o-037LQ" targetConnectionVisual="__dvc8c3sEeeZA_1o-037LQ" name="Personne" associationsIn="__dSJ8c3sEeeZA_1o-037LQ" associationsOut="__dSJ8M3sEeeZA_1o-037LQ" generalizations="__du14M3sEeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__XK64M3sEeeZA_1o-037LQ"/>
+    <visualProperties xmi:id="__d08gc3sEeeZA_1o-037LQ" position="-30.0,657.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="__d08gs3sEeeZA_1o-037LQ" label="+"/>
+    <attributes xmi:id="__d08g83sEeeZA_1o-037LQ" defaultValue="4434646724271327254L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="InscriptionsSportives.uml#__YwPQM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__d08hM3sEeeZA_1o-037LQ" label="-"/>
+      <cardinality xmi:id="__d08hc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__d08hs3sEeeZA_1o-037LQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__d08h83sEeeZA_1o-037LQ" name="prenom">
+      <modelElement href="InscriptionsSportives.uml#__YwPQs3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__d08iM3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__YwPQ83sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__d08ic3sEeeZA_1o-037LQ" name="MultiDeclaration">
+        <modelElement href="InscriptionsSportives.uml#__Yw2UM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__d08is3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__d08i83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__d08jM3sEeeZA_1o-037LQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__d08jc3sEeeZA_1o-037LQ" name="equipes">
+      <modelElement href="InscriptionsSportives.uml#__YxdYc3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="_Pvey0M39EeeZA_1o-037LQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="__d08js3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__d08j83sEeeZA_1o-037LQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="__d08kM3sEeeZA_1o-037LQ" name="Equipe">
+        <modelElement href="InscriptionsSportives.uml#__W2x0M3sEeeZA_1o-037LQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="__d08kc3sEeeZA_1o-037LQ" name="mail">
+      <modelElement href="InscriptionsSportives.uml#__ZLtEs3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__d08ks3sEeeZA_1o-037LQ" name="MultiDeclaration">
+        <modelElement href="InscriptionsSportives.uml#__ZLtE83sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__d08k83sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__ZLtFM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__d08lM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__d08lc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <type xmi:id="__d08ls3sEeeZA_1o-037LQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="__d08l83sEeeZA_1o-037LQ" comments="__dygQM3sEeeZA_1o-037LQ" targetConnectionVisual="__dzHUM3sEeeZA_1o-037LQ" name="getMail">
+      <modelElement href="InscriptionsSportives.uml#__XMJAM3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__d08mM3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__d08mc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__d08ms3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__XMwEM3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__d08m83sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__d08nM3sEeeZA_1o-037LQ" comments="__dzHUc3sEeeZA_1o-037LQ" targetConnectionVisual="__dzHUs3sEeeZA_1o-037LQ" name="setMail">
+      <modelElement href="InscriptionsSportives.uml#__XMwEc3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__d08nc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__d08ns3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="__d08n83sEeeZA_1o-037LQ" name="mail">
+        <modelElement href="InscriptionsSportives.uml#__XMwEs3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__d08oM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__d08oc3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__d08os3sEeeZA_1o-037LQ" name="delete">
+      <modelElement href="InscriptionsSportives.uml#__XNXIM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__d08o83sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__XNXIc3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__d08pM3sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__XNXIs3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__d08pc3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__d08ps3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="__d08p83sEeeZA_1o-037LQ" name="toString">
+      <modelElement href="InscriptionsSportives.uml#__XN-MM3sEeeZA_1o-037LQ"/>
+      <stereotypes xmi:id="__d08qM3sEeeZA_1o-037LQ" name="LegacyStyledElement">
+        <modelElement href="InscriptionsSportives.uml#__XN-Ms3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="__d08qc3sEeeZA_1o-037LQ" name="Annotations">
+        <modelElement href="InscriptionsSportives.uml#__XOlQM3sEeeZA_1o-037LQ"/>
+      </stereotypes>
+      <visibility xmi:id="__d08qs3sEeeZA_1o-037LQ" label="+"/>
+      <cardinality xmi:id="__d08q83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__d08rM3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__XN-Mc3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__d08rc3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="__d08rs3sEeeZA_1o-037LQ" name="Personne">
+      <modelElement href="InscriptionsSportives.uml#__YOq0M3sEeeZA_1o-037LQ"/>
+      <keywords xmi:id="__d08r83sEeeZA_1o-037LQ" keyword="create"/>
+      <visibility xmi:id="__d08sM3sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__d08sc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__d08ss3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YOq183sEeeZA_1o-037LQ"/>
+        <type xmi:id="__d08s83sEeeZA_1o-037LQ" name="Personne">
+          <modelElement href="InscriptionsSportives.uml#__XK64M3sEeeZA_1o-037LQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__d08tM3sEeeZA_1o-037LQ" name="inscriptions">
+        <modelElement href="InscriptionsSportives.uml#__YOq0c3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__d08tc3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__d08ts3sEeeZA_1o-037LQ" name="Inscriptions">
+          <modelElement href="InscriptionsSportives.uml#__W_7wM3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__d08t83sEeeZA_1o-037LQ" name="nom">
+        <modelElement href="InscriptionsSportives.uml#__YOq0s3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__d08uM3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__d08uc3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__d08us3sEeeZA_1o-037LQ" name="prenom">
+        <modelElement href="InscriptionsSportives.uml#__YOq083sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__d08u83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__d08vM3sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="__d08vc3sEeeZA_1o-037LQ" name="mail">
+        <modelElement href="InscriptionsSportives.uml#__YOq1M3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__d08vs3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__d08v83sEeeZA_1o-037LQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__d08wM3sEeeZA_1o-037LQ" name="add">
+      <modelElement href="InscriptionsSportives.uml#__YPR4M3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__d08wc3sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__d08ws3sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__d1jkM3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YP48M3sEeeZA_1o-037LQ"/>
+        <type xmi:id="__d1jkc3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__d1jks3sEeeZA_1o-037LQ" name="equipe">
+        <modelElement href="InscriptionsSportives.uml#__YPR4c3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__d1jk83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__d1jlM3sEeeZA_1o-037LQ" name="Equipe">
+          <modelElement href="InscriptionsSportives.uml#__W2x0M3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="__d1jlc3sEeeZA_1o-037LQ" name="remove">
+      <modelElement href="InscriptionsSportives.uml#__YP48c3sEeeZA_1o-037LQ"/>
+      <visibility xmi:id="__d1jls3sEeeZA_1o-037LQ" label="~"/>
+      <cardinality xmi:id="__d1jl83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="__d1jmM3sEeeZA_1o-037LQ">
+        <modelElement href="InscriptionsSportives.uml#__YP4883sEeeZA_1o-037LQ"/>
+        <type xmi:id="__d1jmc3sEeeZA_1o-037LQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="__d1jms3sEeeZA_1o-037LQ" name="equipe">
+        <modelElement href="InscriptionsSportives.uml#__YP48s3sEeeZA_1o-037LQ"/>
+        <cardinality xmi:id="__d1jm83sEeeZA_1o-037LQ" label="1" max="1" min="1"/>
+        <type xmi:id="__d1jnM3sEeeZA_1o-037LQ" name="Equipe">
+          <modelElement href="InscriptionsSportives.uml#__W2x0M3sEeeZA_1o-037LQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_gyox0M39EeeZA_1o-037LQ" sourceConnectionVisual="_gyox0c39EeeZA_1o-037LQ" text="Modifie la date de cloture des inscriptions. Il est possible de la reculer &#xA;&#x9; * mais pas de l'avancer.&#xA;&#x9; * @param dateCloture" item="_gypY4M39EeeZA_1o-037LQ">
+    <modelElement href="InscriptionsSportives.uml#__ZJ3483sEeeZA_1o-037LQ"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

@@ -107,7 +107,7 @@ public class Inscriptions implements Serializable
 	 * @return
 	 */
 	
-	publi Personne createPersonne(String nom, String prenom, String mail)
+	public Personne createPersonne(String nom, String prenom, String mail)
 	{
 		Personne personne = new Personne(this, nom, prenom, mail);
 		candidats.add(personne);

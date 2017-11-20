@@ -24,13 +24,6 @@ public class Competition implements Comparable<Competition>, Serializable
 	private Set<Candidat> candidats;
 	private LocalDate dateCloture;
 	private boolean enEquipe = false;
-	public Calendar datesysteme = Calendar.getInstance();
-	public int yearsys = datesysteme.get(Calendar.YEAR);
-	public int daysys = datesysteme.get(Calendar.DAY_OF_MONTH);
-	public int monthsys = datesysteme.get(Calendar.MONTH);
-	int yeardc = dateCloture.getYear();
-	int monthdc = dateCloture.getMonthValue();
-	int daydc = dateCloture.getDayOfMonth();
 	
 
 	Competition(Inscriptions inscriptions, String nom, LocalDate dateCloture, boolean enEquipe)
@@ -71,11 +64,9 @@ public class Competition implements Comparable<Competition>, Serializable
 	{
 		
 		// TODO retourner vrai si et seulement si la date système est antérieure à la date de clôture.
-		
-		if (yeardc > yearsys && monthdc > monthsys && daydc > daysys)
-			return true;
-		else
-			return false;
+
+		LocalDate maintenant = LocalDate.now();
+		return (maintenant.isBefore(dateCloture));
 	}
 	
 	/**
@@ -104,11 +95,11 @@ public class Competition implements Comparable<Competition>, Serializable
 	 * @param dateCloture
 	 */
 	
-	public void setDateCloture(LocalDate dateCloture)
+	public void setDateCloture(LocalDate dateCloture, LocalDate newdateCloture)
 	{
 		// TODO vérifier que l'on avance pas la date.
-		
-		this.dateCloture = dateCloture;
+		if(newdateCloture.isBefore(dateCloture))
+			this.dateCloture = dateCloture;
 	}
 	
 	/**
@@ -132,7 +123,8 @@ public class Competition implements Comparable<Competition>, Serializable
 	public boolean add(Personne personne)
 	{
 		// TODO vérifier que la date de clôture n'est pas passée
-		if ((yeardc >= yearsys && monthdc >= monthsys && daydc >= daysys))
+		LocalDate maintenant = LocalDate.now();
+		if (maintenant.isBefore(dateCloture))
 		{
 			if (enEquipe)
 				throw new RuntimeException();
@@ -154,7 +146,8 @@ public class Competition implements Comparable<Competition>, Serializable
 	public boolean add(Equipe equipe)
 	{
 		// TODO vérifier que la date de clôture n'est pas passée
-		if ((yeardc >= yearsys && monthdc >= monthsys && daydc >= daysys))
+		LocalDate maintenant = LocalDate.now();
+		if (maintenant.isBefore(dateCloture))
 		{
 			if (!enEquipe)
 				throw new RuntimeException();

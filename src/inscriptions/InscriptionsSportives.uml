@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="__BovwM3sEeeZA_1o-037LQ" name="InscriptionsSportives">
+    <eAnnotations xmi:id="__Jg5YM3sEeeZA_1o-037LQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="__Jg5Yc3sEeeZA_1o-037LQ" source="codegen">
+        <details xmi:id="__Jg5Ys3sEeeZA_1o-037LQ" key="codegenDirectory" value="/InscriptionsSportives/src"/>
+        <details xmi:id="__ckYQM3sEeeZA_1o-037LQ" key="AssociatedSourceCode" value="/InscriptionsSportives/src/inscriptions/Candidat.java;4206233232/1;/InscriptionsSportives/src/inscriptions/Competition.java;1582517040/1;/InscriptionsSportives/src/inscriptions/Equipe.java;4177557933/1;/InscriptionsSportives/src/inscriptions/Inscriptions.java;3202039354/1;/InscriptionsSportives/src/inscriptions/Personne.java;3494759757/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="__VCz8M3sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="__VCz8c3sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="__VCz8s3sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="__VCz883sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="__VCz9M3sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="__VCz9c3sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="__VCz9s3sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="__VCz983sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="__VDbAM3sEeeZA_1o-037LQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="__VECEM3sEeeZA_1o-037LQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="__VECEc3sEeeZA_1o-037LQ" name="io">
+        <packagedElement xmi:type="uml:Interface" xmi:id="__XtGYM3sEeeZA_1o-037LQ" name="Serializable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__YHWEM3sEeeZA_1o-037LQ" name="FileInputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__YH9Ic3sEeeZA_1o-037LQ" name="FileOutputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__YIkMM3sEeeZA_1o-037LQ" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__YIkMs3sEeeZA_1o-037LQ" name="ObjectInputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__YJLQc3sEeeZA_1o-037LQ" name="ObjectOutputStream"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__VEpIM3sEeeZA_1o-037LQ" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="__Xttcc3sEeeZA_1o-037LQ" name="Collections"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="__Xttc83sEeeZA_1o-037LQ" name="Set"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__XuUgc3sEeeZA_1o-037LQ" name="TreeSet"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="__X7v4M3sEeeZA_1o-037LQ" name="Calendar"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="__X8W8c3sEeeZA_1o-037LQ" name="Date"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__X8W883sEeeZA_1o-037LQ" name="GregorianCalendar"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="__YDrsM3sEeeZA_1o-037LQ" name="SortedSet"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__YJyUM3sEeeZA_1o-037LQ" name="InputMismatchException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__VI6kM3sEeeZA_1o-037LQ" name="time">
+        <packagedElement xmi:type="uml:Class" xmi:id="__X8-Ac3sEeeZA_1o-037LQ" name="LocalDate"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="__X9lEc3sEeeZA_1o-037LQ" name="Month"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__YTjUM3sEeeZA_1o-037LQ" name="lang">
+        <packagedElement xmi:type="uml:Interface" xmi:id="__YUKYM3sEeeZA_1o-037LQ" name="Comparable"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="__VGeUM3sEeeZA_1o-037LQ" name="inscriptions">
+      <packagedElement xmi:type="uml:Class" xmi:id="__WAdQM3sEeeZA_1o-037LQ" name="Candidat" isAbstract="true">
+        <ownedComment xmi:id="__ZIpwM3sEeeZA_1o-037LQ">
+          <body>Candidat à un événement sportif, soit une personne physique, soit une équipe.
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="__YhlwM3sEeeZA_1o-037LQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YiM0M3sEeeZA_1o-037LQ" value="-6035399822298694746L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YiM0c3sEeeZA_1o-037LQ" name="inscriptions" visibility="private" type="__W_7wM3sEeeZA_1o-037LQ" association="__ZQlkM3sEeeZA_1o-037LQ"/>
+        <ownedAttribute xmi:id="__Yiz4c3sEeeZA_1o-037LQ" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__Yiz4s3sEeeZA_1o-037LQ" name="competitions" visibility="private" type="__WIZEM3sEeeZA_1o-037LQ" association="__ZRMoM3sEeeZA_1o-037LQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Yiz483sEeeZA_1o-037LQ" value="*"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="__YUKYs3sEeeZA_1o-037LQ" client="__WAdQM3sEeeZA_1o-037LQ" supplier="__YUKYM3sEeeZA_1o-037LQ" contract="__YUKYM3sEeeZA_1o-037LQ"/>
+        <interfaceRealization xmi:id="__YVYgM3sEeeZA_1o-037LQ" client="__WAdQM3sEeeZA_1o-037LQ" supplier="__XtGYM3sEeeZA_1o-037LQ" contract="__XtGYM3sEeeZA_1o-037LQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y4yIM3sEeeZA_1o-037LQ" name="Candidat" specification="__XvioM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y4yIc3sEeeZA_1o-037LQ" name="inscriptions" type="__W_7wM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y4yIs3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__Y4yI83sEeeZA_1o-037LQ" type="__WAdQM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>this.inscriptions = inscriptions;	
+		this.nom = nom;
+		competitions = new TreeSet&lt;>();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y4yJM3sEeeZA_1o-037LQ" name="getCompetitions" specification="__WCScM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y4yJc3sEeeZA_1o-037LQ" type="__WIZEM3sEeeZA_1o-037LQ" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Y4yJs3sEeeZA_1o-037LQ" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return Collections.unmodifiableSet(competitions);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y5ZMM3sEeeZA_1o-037LQ" name="add" specification="__X4Fgc3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y5ZMc3sEeeZA_1o-037LQ" name="competition" type="__WIZEM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y5ZMs3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return competitions.add(competition);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y5ZM83sEeeZA_1o-037LQ" name="remove" specification="__X4sks3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y5ZNM3sEeeZA_1o-037LQ" name="competition" type="__WIZEM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y5ZNc3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return competitions.remove(competition);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y5ZNs3sEeeZA_1o-037LQ" name="delete" specification="__WDgkM3sEeeZA_1o-037LQ">
+          <language>java</language>
+          <body>for (Competition c : competitions)
+			c.remove(this);
+		inscriptions.remove(this);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y5ZN83sEeeZA_1o-037LQ" name="compareTo" specification="__X5ToM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y5ZOM3sEeeZA_1o-037LQ" name="o" type="__WAdQM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y5ZOc3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return getNom().compareTo(o.getNom());
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y5ZOs3sEeeZA_1o-037LQ" name="toString" specification="__WEHoM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y5ZO83sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return &quot;\n&quot; + getNom() + &quot; -> inscrit à &quot; + getCompetitions();
+		
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__WCScM3sEeeZA_1o-037LQ" name="getCompetitions" method="__Y4yJM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZJQ0M3sEeeZA_1o-037LQ">
+            <body>Retourne toutes les compétitions auxquelles ce candidat est inscrit.s
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__WCScc3sEeeZA_1o-037LQ" type="__WIZEM3sEeeZA_1o-037LQ" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__WC5gM3sEeeZA_1o-037LQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__WDgkM3sEeeZA_1o-037LQ" name="delete" method="__Y5ZNs3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZJQ0c3sEeeZA_1o-037LQ">
+            <body>Supprime un candidat de l'application.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="__WEHoM3sEeeZA_1o-037LQ" name="toString" method="__Y5ZOs3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__WEHoc3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XvioM3sEeeZA_1o-037LQ" name="Candidat" visibility="package" method="__Y4yIM3sEeeZA_1o-037LQ">
+          <eAnnotations xmi:id="__X3ecM3sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__X3ecc3sEeeZA_1o-037LQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="__Xvioc3sEeeZA_1o-037LQ" name="inscriptions" type="__W_7wM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Xvios3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__X4FgM3sEeeZA_1o-037LQ" type="__WAdQM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__X4Fgc3sEeeZA_1o-037LQ" name="add" visibility="package" method="__Y5ZMM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__X4skM3sEeeZA_1o-037LQ" name="competition" type="__WIZEM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__X4skc3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__X4sks3sEeeZA_1o-037LQ" name="remove" visibility="package" method="__Y5ZM83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__X4sk83sEeeZA_1o-037LQ" name="competition" type="__WIZEM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__X4slM3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__X5ToM3sEeeZA_1o-037LQ" name="compareTo" method="__Y5ZN83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__X5Toc3sEeeZA_1o-037LQ" name="o" type="__WAdQM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__X5Tos3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__WIZEM3sEeeZA_1o-037LQ" name="Competition">
+        <ownedComment xmi:id="__ZJQ0s3sEeeZA_1o-037LQ">
+          <body>Représente une compétition, c'est-à-dire un ensemble de candidats 
+inscrits à un événement, les inscriptions sont closes à la date dateCloture.
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="__YkCAM3sEeeZA_1o-037LQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YkCAc3sEeeZA_1o-037LQ" value="-2882150118573759729L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YkCAs3sEeeZA_1o-037LQ" name="inscriptions" visibility="private" type="__W_7wM3sEeeZA_1o-037LQ" association="__ZRMo83sEeeZA_1o-037LQ"/>
+        <ownedAttribute xmi:id="__YkpEc3sEeeZA_1o-037LQ" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YlQIM3sEeeZA_1o-037LQ" name="candidats" visibility="public" type="__WAdQM3sEeeZA_1o-037LQ" isReadOnly="true" association="__ZRzsc3sEeeZA_1o-037LQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__YlQIc3sEeeZA_1o-037LQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YlQI83sEeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ" isReadOnly="true"/>
+        <ownedAttribute xmi:id="__Yl3MM3sEeeZA_1o-037LQ" name="enEquipe" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__Yl3Mc3sEeeZA_1o-037LQ" value="false"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="__YWmoM3sEeeZA_1o-037LQ" client="__WIZEM3sEeeZA_1o-037LQ" supplier="__YUKYM3sEeeZA_1o-037LQ" contract="__YUKYM3sEeeZA_1o-037LQ"/>
+        <interfaceRealization xmi:id="__YXNsM3sEeeZA_1o-037LQ" client="__WIZEM3sEeeZA_1o-037LQ" supplier="__XtGYM3sEeeZA_1o-037LQ" contract="__XtGYM3sEeeZA_1o-037LQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y6AQM3sEeeZA_1o-037LQ" name="Competition" specification="__YX0wM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y6AQc3sEeeZA_1o-037LQ" name="inscriptions" type="__W_7wM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y6AQs3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__Y6AQ83sEeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y6ARM3sEeeZA_1o-037LQ" name="enEquipe">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__Y6ARc3sEeeZA_1o-037LQ" type="__WIZEM3sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.enEquipe = enEquipe;
+		this.inscriptions = inscriptions;
+		this.nom = nom;
+		this.dateCloture = dateCloture;
+		candidats = new TreeSet&lt;>();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y6ARs3sEeeZA_1o-037LQ" name="inscriptionsOuvertes" specification="__YYb1c3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y6AR83sEeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y6ASM3sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO retourner vrai si et seulement si la date système est antérieure à la date de clôture.
+
+		LocalDate maintenant = LocalDate.now();
+		return (maintenant.isBefore(dateCloture));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y6nUM3sEeeZA_1o-037LQ" name="estEnEquipe" specification="__WK1UM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y6nUc3sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return enEquipe;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y6nUs3sEeeZA_1o-037LQ" name="getCandidats" specification="__WK1Us3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y6nU83sEeeZA_1o-037LQ" type="__WAdQM3sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Y6nVM3sEeeZA_1o-037LQ" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return Collections.unmodifiableSet(candidats);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y6nVc3sEeeZA_1o-037LQ" name="add" specification="__X-zMM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y6nVs3sEeeZA_1o-037LQ" name="personne" type="__XK64M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y6nV83sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO vérifier que la date de clôture n'est pas passée
+		LocalDate maintenant = LocalDate.now();
+		if (maintenant.isBefore(dateCloture))
+		{
+			if (enEquipe)
+				throw new RuntimeException();
+			personne.add(this);
+			return candidats.add(personne);
+		}
+		else
+			return false;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y6nWM3sEeeZA_1o-037LQ" name="add" specification="__X_aQM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y6nWc3sEeeZA_1o-037LQ" name="equipe" type="__W2x0M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y6nWs3sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO vérifier que la date de clôture n'est pas passée
+		LocalDate maintenant = LocalDate.now();
+		if (maintenant.isBefore(dateCloture))
+		{
+			if (!enEquipe)
+				throw new RuntimeException();
+			equipe.add(this);
+			return candidats.add(equipe);
+		}
+		else
+			return false;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y8cgM3sEeeZA_1o-037LQ" name="remove" specification="__X_aQ83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y8cgc3sEeeZA_1o-037LQ" name="candidat" type="__WAdQM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y8cgs3sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>candidat.remove(this);
+		return candidats.remove(candidat);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y8cg83sEeeZA_1o-037LQ" name="delete" specification="__WMDcM3sEeeZA_1o-037LQ">
+          <language>java</language>
+          <body>for (Candidat candidat : candidats)
+			remove(candidat);
+		inscriptions.remove(this);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y8chM3sEeeZA_1o-037LQ" name="compareTo" specification="__YABUM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y8chc3sEeeZA_1o-037LQ" name="o" type="__WIZEM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y8chs3sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return getNom().compareTo(o.getNom());
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y8ch83sEeeZA_1o-037LQ" name="toString" specification="__Was8M3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y8ciM3sEeeZA_1o-037LQ" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return getNom();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gyj5UM39EeeZA_1o-037LQ" name="setDateCloture" specification="_gyg2AM39EeeZA_1o-037LQ">
+          <ownedParameter xmi:id="_gyj5Uc39EeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="_gyj5Us39EeeZA_1o-037LQ" name="newdateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <language>java</language>
+          <body>// TODO vérifier que l'on avance pas la date.
+		if(newdateCloture.isBefore(dateCloture))
+			this.dateCloture = dateCloture;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__WK1UM3sEeeZA_1o-037LQ" name="estEnEquipe" method="__Y6nUM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZJ34s3sEeeZA_1o-037LQ">
+            <body>Est vrai si et seulement si les inscriptions sont réservées aux équipes.
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__WK1Uc3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__WMDcM3sEeeZA_1o-037LQ" name="delete" method="__Y8cg83sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZKe883sEeeZA_1o-037LQ">
+            <body>Supprime la compétition de l'application.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="__Was8M3sEeeZA_1o-037LQ" name="toString" method="__Y8ch83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Was8c3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__X-zMM3sEeeZA_1o-037LQ" name="add" method="__Y6nVc3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZKe8M3sEeeZA_1o-037LQ">
+            <body>Inscrit un candidat de type Personne à la compétition. Provoque une
+	 * exception si la compétition est réservée aux équipes ou que les 
+	 * inscriptions sont closes.
+	 * @param personne
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__X-zMc3sEeeZA_1o-037LQ" name="personne" type="__XK64M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__X-zMs3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__X_aQM3sEeeZA_1o-037LQ" name="add" method="__Y6nWM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZKe8c3sEeeZA_1o-037LQ">
+            <body>Inscrit un candidat de type Equipe à la compétition. Provoque une
+	 * exception si la compétition est réservée aux personnes ou que 
+	 * les inscriptions sont closes.
+	 * @param personne
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__X_aQc3sEeeZA_1o-037LQ" name="equipe" type="__W2x0M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__X_aQs3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__X_aQ83sEeeZA_1o-037LQ" name="remove" method="__Y8cgM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZKe8s3sEeeZA_1o-037LQ">
+            <body>Désinscrit un candidat.
+	 * @param candidat
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__X_aRM3sEeeZA_1o-037LQ" name="candidat" type="__WAdQM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__X_aRc3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YABUM3sEeeZA_1o-037LQ" name="compareTo" method="__Y8chM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__YABUc3sEeeZA_1o-037LQ" name="o" type="__WIZEM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YABUs3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YX0wM3sEeeZA_1o-037LQ" name="Competition" visibility="package" method="__Y6AQM3sEeeZA_1o-037LQ">
+          <eAnnotations xmi:id="__YYb0s3sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__YYb083sEeeZA_1o-037LQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="__YX0wc3sEeeZA_1o-037LQ" name="inscriptions" type="__W_7wM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YX0ws3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YYb0M3sEeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YYb0c3sEeeZA_1o-037LQ" name="enEquipe">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YYb1M3sEeeZA_1o-037LQ" type="__WIZEM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YYb1c3sEeeZA_1o-037LQ" name="inscriptionsOuvertes" method="__Y6ARs3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZJ34c3sEeeZA_1o-037LQ">
+            <body>Retourne vrai si les inscriptions sont encore ouvertes, 
+	 * faux si les inscriptions sont closes.
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YZC4M3sEeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YZC4c3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_gyg2AM39EeeZA_1o-037LQ" name="setDateCloture" method="_gyj5UM39EeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZJ3483sEeeZA_1o-037LQ">
+            <body>Modifie la date de cloture des inscriptions. Il est possible de la reculer 
+	 * mais pas de l'avancer.
+	 * @param dateCloture</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_gyhdEM39EeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="_gyhdEc39EeeZA_1o-037LQ" name="newdateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__W2x0M3sEeeZA_1o-037LQ" name="Equipe">
+        <ownedComment xmi:id="__ZKe9M3sEeeZA_1o-037LQ">
+          <body>Représente une Equipe. C'est-à-dire un ensemble de personnes pouvant 
+s'inscrire à une compétition.
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="__YGvAM3sEeeZA_1o-037LQ" general="__WAdQM3sEeeZA_1o-037LQ"/>
+        <ownedAttribute xmi:id="__YphkM3sEeeZA_1o-037LQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YqIoM3sEeeZA_1o-037LQ" value="4147819927233466035L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YqIoc3sEeeZA_1o-037LQ" name="membres" visibility="private" type="__XK64M3sEeeZA_1o-037LQ" association="__ZSawc3sEeeZA_1o-037LQ">
+          <eAnnotations xmi:id="__YqIo83sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__YqIpM3sEeeZA_1o-037LQ" key="sorted"/>
+          </eAnnotations>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__YqIos3sEeeZA_1o-037LQ" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YqIpc3sEeeZA_1o-037LQ" value="new TreeSet&lt;>()"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y9DkM3sEeeZA_1o-037LQ" name="Equipe" specification="__YE50M3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y9Dkc3sEeeZA_1o-037LQ" name="inscriptions" type="__W_7wM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y9Dks3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__Y9Dk83sEeeZA_1o-037LQ" type="__W2x0M3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>super(inscriptions, nom);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y9qoM3sEeeZA_1o-037LQ" name="getMembres" specification="__W6cMM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y9qoc3sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>return Collections.unmodifiableSortedSet(membres);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y9qos3sEeeZA_1o-037LQ" name="add" specification="__YFg4M3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y9qo83sEeeZA_1o-037LQ" name="membre" type="__XK64M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y9qpM3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>membre.add(this);
+		return membres.add(membre);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y9qpc3sEeeZA_1o-037LQ" name="remove" specification="__YGH8c3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y9qps3sEeeZA_1o-037LQ" name="membre" type="__XK64M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__Y9qp83sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>membre.remove(this);
+		return membres.remove(membre);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y9qqM3sEeeZA_1o-037LQ" name="delete" specification="__W7qUM3sEeeZA_1o-037LQ">
+          <language>java</language>
+          <body>super.delete();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y9qqc3sEeeZA_1o-037LQ" name="toString" specification="__W8RY83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y9qqs3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return &quot;Equipe &quot; + super.toString();
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__W6cMM3sEeeZA_1o-037LQ" name="getMembres" method="__Y9qoM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZKe9c3sEeeZA_1o-037LQ">
+            <body>Retourne l'ensemble des personnes formant l'équipe.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YbfIM3sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__W7qUM3sEeeZA_1o-037LQ" name="delete" method="__Y9qqM3sEeeZA_1o-037LQ"/>
+        <ownedOperation xmi:id="__W8RY83sEeeZA_1o-037LQ" name="toString" method="__Y9qqc3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__W9fgM3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YE50M3sEeeZA_1o-037LQ" name="Equipe" visibility="package" method="__Y9DkM3sEeeZA_1o-037LQ">
+          <eAnnotations xmi:id="__YE5083sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__YE51M3sEeeZA_1o-037LQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="__YE50c3sEeeZA_1o-037LQ" name="inscriptions" type="__W_7wM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YE50s3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YE51c3sEeeZA_1o-037LQ" type="__W2x0M3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YFg4M3sEeeZA_1o-037LQ" name="add" method="__Y9qos3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZKe9s3sEeeZA_1o-037LQ">
+            <body>Ajoute une personne dans l'équipe.
+	 * @param membre
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YFg4c3sEeeZA_1o-037LQ" name="membre" type="__XK64M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YGH8M3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YGH8c3sEeeZA_1o-037LQ" name="remove" method="__Y9qpc3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZKe983sEeeZA_1o-037LQ">
+            <body>Supprime une personne de l'équipe. 
+	 * @param membre
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YGH8s3sEeeZA_1o-037LQ" name="membre" type="__XK64M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YGH883sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__W_7wM3sEeeZA_1o-037LQ" name="Inscriptions">
+        <ownedComment xmi:id="__ZLGAM3sEeeZA_1o-037LQ">
+          <body>Point d'entrée dans l'application, un seul objet de type Inscription
+permet de gérer les compétitions, candidats (de type equipe ou personne)
+ainsi que d'inscrire des candidats à des compétition.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="__Yqvsc3sEeeZA_1o-037LQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YrWwM3sEeeZA_1o-037LQ" value="-3095339436048473524L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YrWwc3sEeeZA_1o-037LQ" name="FILE_NAME" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YrWws3sEeeZA_1o-037LQ" value="&quot;Inscriptions.srz&quot;"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YrWw83sEeeZA_1o-037LQ" name="inscriptions" isStatic="true" type="__W_7wM3sEeeZA_1o-037LQ" isReadOnly="true" association="__ZSaxM3sEeeZA_1o-037LQ"/>
+        <ownedAttribute xmi:id="__Ysk4c3sEeeZA_1o-037LQ" name="competitions" type="__WIZEM3sEeeZA_1o-037LQ" isReadOnly="true" association="__ZTB0c3sEeeZA_1o-037LQ">
+          <eAnnotations xmi:id="__YtL8M3sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__YtL8c3sEeeZA_1o-037LQ" key="sorted"/>
+          </eAnnotations>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Ysk483sEeeZA_1o-037LQ" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YtL8s3sEeeZA_1o-037LQ" value="new TreeSet&lt;>()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YuaEM3sEeeZA_1o-037LQ" name="candidats" visibility="private" type="__WAdQM3sEeeZA_1o-037LQ" association="__ZTo4c3sEeeZA_1o-037LQ">
+          <eAnnotations xmi:id="__YuaEs3sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__YuaE83sEeeZA_1o-037LQ" key="sorted"/>
+          </eAnnotations>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__YuaEc3sEeeZA_1o-037LQ" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YvBIM3sEeeZA_1o-037LQ" value="new TreeSet&lt;>()"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="__YcGMM3sEeeZA_1o-037LQ" client="__W_7wM3sEeeZA_1o-037LQ" supplier="__XtGYM3sEeeZA_1o-037LQ" contract="__XtGYM3sEeeZA_1o-037LQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__Y-RtM3sEeeZA_1o-037LQ" name="getCandidats" specification="__XBw8M3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__Y-Rtc3sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>return Collections.unmodifiableSortedSet(candidats);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZAG4M3sEeeZA_1o-037LQ" name="getPersonnes" specification="__XCYAM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZAG4c3sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>SortedSet&lt;Personne> personnes = new TreeSet&lt;>();
+		for (Candidat c : getCandidats())
+			if (c instanceof Personne)
+				personnes.add((Personne)c);
+		return Collections.unmodifiableSortedSet(personnes);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZAG4s3sEeeZA_1o-037LQ" name="getEquipes" specification="__XC_EM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZAG483sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>SortedSet&lt;Equipe> equipes = new TreeSet&lt;>();
+		for (Candidat c : getCandidats())
+			if (c instanceof Equipe)
+				equipes.add((Equipe)c);
+		return Collections.unmodifiableSortedSet(equipes);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZAt8M3sEeeZA_1o-037LQ" name="createCompetition" specification="__YdUUs3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZAt8c3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZAt8s3sEeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__ZAt883sEeeZA_1o-037LQ" name="enEquipe">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZAt9M3sEeeZA_1o-037LQ" type="__WIZEM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>Competition competition = new Competition(this, nom, dateCloture, enEquipe);
+		competitions.add(competition);
+		return competition;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZCjIM3sEeeZA_1o-037LQ" name="createPersonne" specification="__XDmIM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZCjIc3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZCjIs3sEeeZA_1o-037LQ" name="prenom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZCjI83sEeeZA_1o-037LQ" name="mail">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZCjJM3sEeeZA_1o-037LQ" type="__XK64M3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>Personne personne = new Personne(this, nom, prenom, mail);
+		candidats.add(personne);
+		return personne;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZDKMM3sEeeZA_1o-037LQ" name="createEquipe" specification="__XENM83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZDKMc3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZDKMs3sEeeZA_1o-037LQ" type="__W2x0M3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>Equipe equipe = new Equipe(this, nom);
+		candidats.add(equipe);
+		return equipe;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZDKM83sEeeZA_1o-037LQ" name="remove" specification="__YLAcs3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZDKNM3sEeeZA_1o-037LQ" name="competition" type="__WIZEM3sEeeZA_1o-037LQ"/>
+          <language>java</language>
+          <body>competitions.remove(competition);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZDKNc3sEeeZA_1o-037LQ" name="remove" specification="__YLngM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZDKNs3sEeeZA_1o-037LQ" name="candidat" type="__WAdQM3sEeeZA_1o-037LQ"/>
+          <language>java</language>
+          <body>candidats.remove(candidat);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZDKN83sEeeZA_1o-037LQ" name="reinitialiser" specification="__XE0QM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZDKOM3sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>inscriptions = new Inscriptions();
+		return getInscriptions();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZFmcM3sEeeZA_1o-037LQ" name="recharger" specification="__XE0Qc3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZFmcc3sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>inscriptions = null;
+		return getInscriptions();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZFmcs3sEeeZA_1o-037LQ" name="readObject" specification="__XFbUM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZFmc83sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>ObjectInputStream ois = null;
+		try
+		{
+			FileInputStream fis = new FileInputStream(FILE_NAME);
+			ois = new ObjectInputStream(fis);
+			return (Inscriptions)(ois.readObject());
+		}
+		catch (IOException | ClassNotFoundException e)
+		{
+			return null;
+		}
+		finally
+		{
+				try
+				{
+					if (ois != null)
+						ois.close();
+				} 
+				catch (IOException e){}
+		}	
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZFmdM3sEeeZA_1o-037LQ" name="sauvegarder" specification="__XFbUc3sEeeZA_1o-037LQ">
+          <language>java</language>
+          <body>ObjectOutputStream oos = null;
+		try
+		{
+			FileOutputStream fis = new FileOutputStream(FILE_NAME);
+			oos = new ObjectOutputStream(fis);
+			oos.writeObject(this);
+		}
+		catch (IOException e)
+		{
+			throw e;
+		}
+		finally
+		{
+			try
+			{
+				if (oos != null)
+					oos.close();
+			} 
+			catch (IOException e){}
+		}
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZFmdc3sEeeZA_1o-037LQ" name="toString" specification="__XFbUs3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZFmds3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return &quot;Candidats : &quot; + getCandidats().toString()
+			+ &quot;\nCompetitions  &quot; + getCompetitions().toString();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZFmd83sEeeZA_1o-037LQ" name="main" specification="__XGpcM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZFmeM3sEeeZA_1o-037LQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ZFmec3sEeeZA_1o-037LQ" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>//	try {
+		Inscriptions inscriptions = Inscriptions.getInscriptions();
+		Competition flechettes = inscriptions.createCompetition(&quot;Mondial de fléchettes&quot;, null, false);
+		Personne tony = inscriptions.createPersonne(&quot;Tony&quot;, &quot;Dent de plomb&quot;, &quot;azerty&quot;), 
+				boris = inscriptions.createPersonne(&quot;Boris&quot;, &quot;le Hachoir&quot;, &quot;ytreza&quot;);
+		flechettes.add(tony);
+		Equipe lesManouches = inscriptions.createEquipe(&quot;Les Manouches&quot;);
+		lesManouches.add(boris);
+		lesManouches.add(tony);
+	
+		System.out.println(inscriptions);
+		lesManouches.delete();
+		System.out.println(inscriptions);
+		
+		try
+		{
+			inscriptions.sauvegarder();
+		} 
+		catch (IOException e)
+		{
+			System.out.println(&quot;Sauvegarde impossible.&quot; + e);
+		}
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__XBJ4M3sEeeZA_1o-037LQ" name="Inscriptions" visibility="private">
+          <eAnnotations xmi:id="__XBJ4c3sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__XBJ4s3sEeeZA_1o-037LQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="__XBJ5M3sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XBw8M3sEeeZA_1o-037LQ" name="getCandidats" method="__Y-RtM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLGAc3sEeeZA_1o-037LQ">
+            <body>Retourne tous les candidats (personnes et équipes confondues).
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YctQM3sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XCYAM3sEeeZA_1o-037LQ" name="getPersonnes" method="__ZAG4M3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLGAs3sEeeZA_1o-037LQ">
+            <body>Retourne toutes les personnes.
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YdUUM3sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XC_EM3sEeeZA_1o-037LQ" name="getEquipes" method="__ZAG4s3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLGA83sEeeZA_1o-037LQ">
+            <body>Retourne toutes les équipes.
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YdUUc3sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XDmIM3sEeeZA_1o-037LQ" name="createPersonne" method="__ZCjIM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLGBc3sEeeZA_1o-037LQ">
+            <body>Créée une Candidat de type Personne. Ceci est le seul moyen, il n'y a pas
+	 * de constructeur public dans {@link Personne}.
+
+	 * @param nom
+	 * @param prenom
+	 * @param mail
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__XENMM3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__XENMc3sEeeZA_1o-037LQ" name="prenom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__XENMs3sEeeZA_1o-037LQ" name="mail">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YLAcM3sEeeZA_1o-037LQ" type="__XK64M3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XENM83sEeeZA_1o-037LQ" name="createEquipe" method="__ZDKMM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLGBs3sEeeZA_1o-037LQ">
+            <body>Créée une Candidat de type équipe. Ceci est le seul moyen, il n'y a pas
+	 * de constructeur public dans {@link Equipe}.
+	 * @param nom
+	 * @param prenom
+	 * @param mail
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__XENNM3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YLAcc3sEeeZA_1o-037LQ" type="__W2x0M3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XE0QM3sEeeZA_1o-037LQ" name="reinitialiser" method="__ZDKN83sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLGB83sEeeZA_1o-037LQ">
+            <body>Retourne un object inscriptions vide. Ne modifie pas les compétitions
+	 * et candidats déjà existants.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YMOkM3sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XE0Qc3sEeeZA_1o-037LQ" name="recharger" method="__ZFmcM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLGCM3sEeeZA_1o-037LQ">
+            <body>Efface toutes les modifications sur Inscriptions depuis la dernière sauvegarde.
+	 * Ne modifie pas les compétitions et candidats déjà existants.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YMOkc3sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XFbUM3sEeeZA_1o-037LQ" name="readObject" visibility="private" isStatic="true" method="__ZFmcs3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__YMOks3sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XFbUc3sEeeZA_1o-037LQ" name="sauvegarder" method="__ZFmdM3sEeeZA_1o-037LQ" raisedException="__YIkMM3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLtEM3sEeeZA_1o-037LQ">
+            <body>Sauvegarde le gestionnaire pour qu'il soit ouvert automatiquement 
+	 * lors d'une exécution ultérieure du programme.
+	 * @throws IOException</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XFbUs3sEeeZA_1o-037LQ" name="toString" method="__ZFmdc3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__XGCYM3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XGpcM3sEeeZA_1o-037LQ" name="main" isStatic="true" method="__ZFmd83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__XGpcc3sEeeZA_1o-037LQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__XGpcs3sEeeZA_1o-037LQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YLAcs3sEeeZA_1o-037LQ" name="remove" visibility="package" method="__ZDKM83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__YLAc83sEeeZA_1o-037LQ" name="competition" type="__WIZEM3sEeeZA_1o-037LQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YLngM3sEeeZA_1o-037LQ" name="remove" visibility="package" method="__ZDKNc3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__YLngc3sEeeZA_1o-037LQ" name="candidat" type="__WAdQM3sEeeZA_1o-037LQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YdUUs3sEeeZA_1o-037LQ" name="createCompetition" method="__ZAt8M3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZLGBM3sEeeZA_1o-037LQ">
+            <body>Créée une compétition. Ceci est le seul moyen, il n'y a pas
+	 * de constructeur public dans {@link Competition}.
+	 * @param nom
+	 * @param dateCloture
+	 * @param enEquipe
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__YdUU83sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YdUVM3sEeeZA_1o-037LQ" name="dateCloture" type="__X8-Ac3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YdUVc3sEeeZA_1o-037LQ" name="enEquipe">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__Yd7YM3sEeeZA_1o-037LQ" type="__WIZEM3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="__XK64M3sEeeZA_1o-037LQ" name="Personne">
+        <ownedComment xmi:id="__ZLtEc3sEeeZA_1o-037LQ">
+          <body>Représente une personne physique pouvant s'inscrire à une compétition.</body>
+        </ownedComment>
+        <generalization xmi:id="__YP49M3sEeeZA_1o-037LQ" general="__WAdQM3sEeeZA_1o-037LQ"/>
+        <ownedAttribute xmi:id="__YwPQM3sEeeZA_1o-037LQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="__YwPQc3sEeeZA_1o-037LQ" value="4434646724271327254L"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YwPQs3sEeeZA_1o-037LQ" name="prenom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__YxdYc3sEeeZA_1o-037LQ" name="equipes" type="__W2x0M3sEeeZA_1o-037LQ" isReadOnly="true" association="__ZTo5M3sEeeZA_1o-037LQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__YyEcc3sEeeZA_1o-037LQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="__ZLtEs3sEeeZA_1o-037LQ" name="mail">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZG0k83sEeeZA_1o-037LQ" name="Personne" specification="__YOq0M3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZG0lM3sEeeZA_1o-037LQ" name="inscriptions" type="__W_7wM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__ZG0lc3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZG0ls3sEeeZA_1o-037LQ" name="prenom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZG0l83sEeeZA_1o-037LQ" name="mail">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__ZG0mM3sEeeZA_1o-037LQ" type="__XK64M3sEeeZA_1o-037LQ" direction="return"/>
+          <language>java</language>
+          <body>super(inscriptions, nom);
+		this.prenom = prenom;
+		this.mail = mail;
+		equipes = new TreeSet&lt;>();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZG0mc3sEeeZA_1o-037LQ" name="getMail" specification="__XMJAM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZG0ms3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return mail;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZG0m83sEeeZA_1o-037LQ" name="setMail" specification="__XMwEc3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZG0nM3sEeeZA_1o-037LQ" name="mail">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.mail = mail;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZHboM3sEeeZA_1o-037LQ" name="add" specification="__YPR4M3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZHboc3sEeeZA_1o-037LQ" name="equipe" type="__W2x0M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__ZHbos3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return equipes.add(equipe);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZHbo83sEeeZA_1o-037LQ" name="remove" specification="__YP48c3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZHbpM3sEeeZA_1o-037LQ" name="equipe" type="__W2x0M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__ZHbpc3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return equipes.remove(equipe);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZHbps3sEeeZA_1o-037LQ" name="delete" specification="__XNXIM3sEeeZA_1o-037LQ">
+          <language>java</language>
+          <body>super.delete();
+		for (Equipe e : equipes)
+			e.remove(this);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__ZHbp83sEeeZA_1o-037LQ" name="toString" specification="__XN-MM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__ZHbqM3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return super.toString() + &quot; membre de &quot; + equipes.toString();
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="__XMJAM3sEeeZA_1o-037LQ" name="getMail" method="__ZG0mc3sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZMUIM3sEeeZA_1o-037LQ">
+            <body>Retourne l'adresse électronique de la personne.
+	 * @return</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__XMwEM3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XMwEc3sEeeZA_1o-037LQ" name="setMail" method="__ZG0m83sEeeZA_1o-037LQ">
+          <ownedComment xmi:id="__ZMUIc3sEeeZA_1o-037LQ">
+            <body>Modifie l'adresse électronique de la personne.
+	 * @param mail</body>
+          </ownedComment>
+          <ownedParameter xmi:id="__XMwEs3sEeeZA_1o-037LQ" name="mail">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__XNXIM3sEeeZA_1o-037LQ" name="delete" method="__ZHbps3sEeeZA_1o-037LQ"/>
+        <ownedOperation xmi:id="__XN-MM3sEeeZA_1o-037LQ" name="toString" method="__ZHbp83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__XN-Mc3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YOq0M3sEeeZA_1o-037LQ" name="Personne" visibility="package" method="__ZG0k83sEeeZA_1o-037LQ">
+          <eAnnotations xmi:id="__YOq1c3sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="__YOq1s3sEeeZA_1o-037LQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="__YOq0c3sEeeZA_1o-037LQ" name="inscriptions" type="__W_7wM3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YOq0s3sEeeZA_1o-037LQ" name="nom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YOq083sEeeZA_1o-037LQ" name="prenom">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YOq1M3sEeeZA_1o-037LQ" name="mail">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="__YOq183sEeeZA_1o-037LQ" type="__XK64M3sEeeZA_1o-037LQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YPR4M3sEeeZA_1o-037LQ" name="add" visibility="package" method="__ZHboM3sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__YPR4c3sEeeZA_1o-037LQ" name="equipe" type="__W2x0M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YP48M3sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="__YP48c3sEeeZA_1o-037LQ" name="remove" visibility="package" method="__ZHbo83sEeeZA_1o-037LQ">
+          <ownedParameter xmi:id="__YP48s3sEeeZA_1o-037LQ" name="equipe" type="__W2x0M3sEeeZA_1o-037LQ"/>
+          <ownedParameter xmi:id="__YP4883sEeeZA_1o-037LQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZQlkM3sEeeZA_1o-037LQ" name="" memberEnd="__ZQlkc3sEeeZA_1o-037LQ __YiM0c3sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZQlkc3sEeeZA_1o-037LQ" name="" type="__WAdQM3sEeeZA_1o-037LQ" association="__ZQlkM3sEeeZA_1o-037LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZRMoM3sEeeZA_1o-037LQ" name="" memberEnd="__ZRMoc3sEeeZA_1o-037LQ __Yiz4s3sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZRMoc3sEeeZA_1o-037LQ" name="" type="__WAdQM3sEeeZA_1o-037LQ" association="__ZRMoM3sEeeZA_1o-037LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZRMo83sEeeZA_1o-037LQ" name="" memberEnd="__ZRMpM3sEeeZA_1o-037LQ __YkCAs3sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZRMpM3sEeeZA_1o-037LQ" name="" type="__WIZEM3sEeeZA_1o-037LQ" association="__ZRMo83sEeeZA_1o-037LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZRzsc3sEeeZA_1o-037LQ" name="" memberEnd="__ZRzss3sEeeZA_1o-037LQ __YlQIM3sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZRzss3sEeeZA_1o-037LQ" name="" type="__WIZEM3sEeeZA_1o-037LQ" association="__ZRzsc3sEeeZA_1o-037LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZSawc3sEeeZA_1o-037LQ" name="" memberEnd="__ZSaws3sEeeZA_1o-037LQ __YqIoc3sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZSaws3sEeeZA_1o-037LQ" name="" type="__W2x0M3sEeeZA_1o-037LQ" association="__ZSawc3sEeeZA_1o-037LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZSaxM3sEeeZA_1o-037LQ" name="" memberEnd="__ZSaxc3sEeeZA_1o-037LQ __YrWw83sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZSaxc3sEeeZA_1o-037LQ" name="" type="__W_7wM3sEeeZA_1o-037LQ" association="__ZSaxM3sEeeZA_1o-037LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZTB0c3sEeeZA_1o-037LQ" name="" memberEnd="__ZTB0s3sEeeZA_1o-037LQ __Ysk4c3sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZTB0s3sEeeZA_1o-037LQ" name="" type="__W_7wM3sEeeZA_1o-037LQ" association="__ZTB0c3sEeeZA_1o-037LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZTo4c3sEeeZA_1o-037LQ" name="" memberEnd="__ZTo4s3sEeeZA_1o-037LQ __YuaEM3sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZTo4s3sEeeZA_1o-037LQ" name="" type="__W_7wM3sEeeZA_1o-037LQ" association="__ZTo4c3sEeeZA_1o-037LQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ZTo5M3sEeeZA_1o-037LQ" name="" memberEnd="__ZTo5c3sEeeZA_1o-037LQ __YxdYc3sEeeZA_1o-037LQ">
+        <ownedEnd xmi:id="__ZTo5c3sEeeZA_1o-037LQ" name="" type="__XK64M3sEeeZA_1o-037LQ" association="__ZTo5M3sEeeZA_1o-037LQ"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="__Jg5Y83sEeeZA_1o-037LQ">
+      <eAnnotations xmi:id="__Jg5ZM3sEeeZA_1o-037LQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="__JhgcM3sEeeZA_1o-037LQ" base_Package="__BovwM3sEeeZA_1o-037LQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__WEusM3sEeeZA_1o-037LQ" base_Element="__WEHoM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__WEusc3sEeeZA_1o-037LQ" base_Element="__WEHoM3sEeeZA_1o-037LQ">
+    <annotations xmi:id="__WEuss3sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__WbUAM3sEeeZA_1o-037LQ" base_Element="__Was8M3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__WbUAc3sEeeZA_1o-037LQ" base_Element="__Was8M3sEeeZA_1o-037LQ">
+    <annotations xmi:id="__WbUAs3sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="__W7DQM3sEeeZA_1o-037LQ" genericsValue="Personne" base_Element="__W6cMM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__W8RYM3sEeeZA_1o-037LQ" base_Element="__W7qUM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__W8RYc3sEeeZA_1o-037LQ" base_Element="__W7qUM3sEeeZA_1o-037LQ">
+    <annotations xmi:id="__W8RYs3sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__W9fgc3sEeeZA_1o-037LQ" base_Element="__W8RY83sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__W9fgs3sEeeZA_1o-037LQ" base_Element="__W8RY83sEeeZA_1o-037LQ">
+    <annotations xmi:id="__W9fg83sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__XBJ483sEeeZA_1o-037LQ" base_Element="__XBJ4M3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Generics xmi:id="__XBw8c3sEeeZA_1o-037LQ" genericsValue="Candidat" base_Element="__XBw8M3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Generics xmi:id="__XCYAc3sEeeZA_1o-037LQ" genericsValue="Personne" base_Element="__XCYAM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Generics xmi:id="__XC_Ec3sEeeZA_1o-037LQ" genericsValue="Equipe" base_Element="__XC_EM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__XGCYc3sEeeZA_1o-037LQ" base_Element="__XFbUs3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__XGCYs3sEeeZA_1o-037LQ" base_Element="__XFbUs3sEeeZA_1o-037LQ">
+    <annotations xmi:id="__XGCY83sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__XNXIc3sEeeZA_1o-037LQ" base_Element="__XNXIM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__XNXIs3sEeeZA_1o-037LQ" base_Element="__XNXIM3sEeeZA_1o-037LQ">
+    <annotations xmi:id="__XNXI83sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__XN-Ms3sEeeZA_1o-037LQ" base_Element="__XN-MM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__XOlQM3sEeeZA_1o-037LQ" base_Element="__XN-MM3sEeeZA_1o-037LQ">
+    <annotations xmi:id="__XOlQc3sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="__XttcM3sEeeZA_1o-037LQ" base_Element="__XtGYM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__Xttcs3sEeeZA_1o-037LQ" base_Element="__Xttcc3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__XuUgM3sEeeZA_1o-037LQ" base_Element="__Xttc83sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__Xu7kM3sEeeZA_1o-037LQ" base_Element="__XuUgc3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__X5To83sEeeZA_1o-037LQ" base_Element="__X5ToM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__X56sM3sEeeZA_1o-037LQ" base_Element="__X5ToM3sEeeZA_1o-037LQ">
+    <annotations xmi:id="__X56sc3sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="__X8W8M3sEeeZA_1o-037LQ" base_Element="__X7v4M3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__X8W8s3sEeeZA_1o-037LQ" base_Element="__X8W8c3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__X8-AM3sEeeZA_1o-037LQ" base_Element="__X8W883sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__X9lEM3sEeeZA_1o-037LQ" base_Element="__X8-Ac3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__X9lEs3sEeeZA_1o-037LQ" base_Element="__X9lEc3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__YABU83sEeeZA_1o-037LQ" base_Element="__YABUM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Annotations xmi:id="__YABVM3sEeeZA_1o-037LQ" base_Element="__YABUM3sEeeZA_1o-037LQ">
+    <annotations xmi:id="__YABVc3sEeeZA_1o-037LQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="__YESwM3sEeeZA_1o-037LQ" base_Element="__YDrsM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__YH9IM3sEeeZA_1o-037LQ" base_Element="__YHWEM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__YH9Is3sEeeZA_1o-037LQ" base_Element="__YH9Ic3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__YIkMc3sEeeZA_1o-037LQ" base_Element="__YIkMM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__YJLQM3sEeeZA_1o-037LQ" base_Element="__YIkMs3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__YJLQs3sEeeZA_1o-037LQ" base_Element="__YJLQc3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__YJyUc3sEeeZA_1o-037LQ" base_Element="__YJyUM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__YUKYc3sEeeZA_1o-037LQ" base_Element="__YUKYM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Generics xmi:id="__YUxcM3sEeeZA_1o-037LQ" genericsValue="Candidat" base_Element="__YUKYs3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Generics xmi:id="__YWmoc3sEeeZA_1o-037LQ" genericsValue="Competition" base_Element="__YWmoM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__Yiz4M3sEeeZA_1o-037LQ" base_Element="__YiM0c3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__Yja8M3sEeeZA_1o-037LQ" base_Element="__Yiz4s3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__YkpEM3sEeeZA_1o-037LQ" base_Element="__YkCAs3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__YlQIs3sEeeZA_1o-037LQ" base_Element="__YlQIM3sEeeZA_1o-037LQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="__WK1Us3sEeeZA_1o-037LQ" name="getCandidats" method="__Y6nUs3sEeeZA_1o-037LQ">
+      <ownedParameter xmi:id="_gyfn4M39EeeZA_1o-037LQ" type="__WAdQM3sEeeZA_1o-037LQ" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gyfn4c39EeeZA_1o-037LQ" value="*"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__Yl3Ms3sEeeZA_1o-037LQ" base_Element="__Yl3MM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__YqvsM3sEeeZA_1o-037LQ" base_Element="__YqIoc3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__YrWxM3sEeeZA_1o-037LQ" base_Element="__YrWw83sEeeZA_1o-037LQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="__Yr90M3sEeeZA_1o-037LQ" name="getInscriptions" isStatic="true" method="__Y-RsM3sEeeZA_1o-037LQ">
+      <ownedParameter xmi:id="__Ysk4M3sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__Ysk4s3sEeeZA_1o-037LQ" base_Element="__Ysk4c3sEeeZA_1o-037LQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="__YtL883sEeeZA_1o-037LQ" name="getCompetitions" method="__Y-Rss3sEeeZA_1o-037LQ">
+      <ownedParameter xmi:id="__YtzAc3sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Generics xmi:id="__YtzAM3sEeeZA_1o-037LQ" genericsValue="Competition" base_Element="__YtL883sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__YvBIc3sEeeZA_1o-037LQ" base_Element="__YuaEM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__YwPQ83sEeeZA_1o-037LQ" base_Element="__YwPQs3sEeeZA_1o-037LQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="__Yw2Uc3sEeeZA_1o-037LQ" name="getPrenom" method="__ZGNgM3sEeeZA_1o-037LQ">
+      <ownedParameter xmi:id="__YxdYM3sEeeZA_1o-037LQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="__Yw2Us3sEeeZA_1o-037LQ" name="setPrenom" method="__ZGNgs3sEeeZA_1o-037LQ">
+      <ownedParameter xmi:id="__Yw2U83sEeeZA_1o-037LQ" name="prenom">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:MultiDeclaration xmi:id="__Yw2UM3sEeeZA_1o-037LQ" base_Property="__YwPQs3sEeeZA_1o-037LQ" siblings="__ZLtEs3sEeeZA_1o-037LQ" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__YyEcM3sEeeZA_1o-037LQ" base_Element="__YxdYc3sEeeZA_1o-037LQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="__YyEcs3sEeeZA_1o-037LQ" name="getEquipes" method="__ZG0kM3sEeeZA_1o-037LQ">
+      <ownedParameter xmi:id="__YyEc83sEeeZA_1o-037LQ" type="__W2x0M3sEeeZA_1o-037LQ" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__YyEdM3sEeeZA_1o-037LQ" value="*"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <uml:OpaqueBehavior xmi:id="__Y-RsM3sEeeZA_1o-037LQ" name="getInscriptions" specification="__Yr90M3sEeeZA_1o-037LQ">
+    <ownedParameter xmi:id="__Y-Rsc3sEeeZA_1o-037LQ" type="__W_7wM3sEeeZA_1o-037LQ" direction="return"/>
+    <language>java</language>
+    <body>if (inscriptions == null)
+		{
+			inscriptions = readObject();
+			if (inscriptions == null)
+				inscriptions = new Inscriptions();
+		}
+		return inscriptions;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="__Y-Rss3sEeeZA_1o-037LQ" name="getCompetitions" specification="__YtL883sEeeZA_1o-037LQ">
+    <ownedParameter xmi:id="__Y-Rs83sEeeZA_1o-037LQ" type="__YDrsM3sEeeZA_1o-037LQ" direction="return"/>
+    <language>java</language>
+    <body>return Collections.unmodifiableSortedSet(competitions);
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="__ZGNgM3sEeeZA_1o-037LQ" name="getPrenom" specification="__Yw2Uc3sEeeZA_1o-037LQ">
+    <ownedParameter xmi:id="__ZGNgc3sEeeZA_1o-037LQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return prenom;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="__ZGNgs3sEeeZA_1o-037LQ" name="setPrenom" specification="__Yw2Us3sEeeZA_1o-037LQ">
+    <ownedParameter xmi:id="__ZGNg83sEeeZA_1o-037LQ" name="prenom">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.prenom = prenom;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="__ZG0kM3sEeeZA_1o-037LQ" name="getEquipes" specification="__YyEcs3sEeeZA_1o-037LQ">
+    <ownedParameter xmi:id="__ZG0kc3sEeeZA_1o-037LQ" type="__W2x0M3sEeeZA_1o-037LQ" direction="return">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ZG0ks3sEeeZA_1o-037LQ" value="*"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return Collections.unmodifiableSet(equipes);
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:MultiDeclaration xmi:id="__ZLtE83sEeeZA_1o-037LQ" base_Property="__ZLtEs3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__ZLtFM3sEeeZA_1o-037LQ" base_Element="__ZLtEs3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZQlks3sEeeZA_1o-037LQ" base_Element="__ZQlkM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZRMos3sEeeZA_1o-037LQ" base_Element="__ZRMoM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZRzsM3sEeeZA_1o-037LQ" base_Element="__ZRMo83sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZSawM3sEeeZA_1o-037LQ" base_Element="__ZRzsc3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZSaw83sEeeZA_1o-037LQ" base_Element="__ZSawc3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZTB0M3sEeeZA_1o-037LQ" base_Element="__ZSaxM3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZTo4M3sEeeZA_1o-037LQ" base_Element="__ZTB0c3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZTo483sEeeZA_1o-037LQ" base_Element="__ZTo4c3sEeeZA_1o-037LQ"/>
+  <UMLLabProfile:Reference xmi:id="__ZUP8M3sEeeZA_1o-037LQ" base_Element="__ZTo5M3sEeeZA_1o-037LQ"/>
+</xmi:XMI>
