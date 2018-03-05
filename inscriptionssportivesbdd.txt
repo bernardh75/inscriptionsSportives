@@ -1,0 +1,38 @@
+mysql> create database inscriptionssportives ;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use inscriptionssportives ;
+Database changed
+mysql> CREATE TABLE PERSONNE(        nomPersonne         Varchar (30) ,        adresse             Varchar (60) ,        cp                  Int ,        ville               Varchar (30) ,        idCandidat          Int NOT NULL ,        idCandidat_CANDIDAT Int ,        PRIMARY KEY (idCandidat ))ENGINE=InnoDB;CREATE TABLE EQUIPE(        nomEquipe  Varchar (30) ,        idCandidat Int NOT NULL ,        PRIMARY KEY (idCandidat ))ENGINE=InnoDB;CREATE TABLE CANDIDAT(        idCandidat    int (11) Auto_increment  NOT NULL ,        nomCandidat   Varchar (30) ,        idCompetition Int ,        PRIMARY KEY (idCandidat ))ENGINE=InnoDB;CREATE TABLE COMPETITION(        idCompetition  int (11) Auto_increment  NOT NULL ,        nomCompetition Varchar (60) ,        PRIMARY KEY (idCompetition ))ENGINE=InnoDB;ALTER TABLE PERSONNE ADD CONSTRAINT FK_PERSONNE_idCandidat FOREIGN KEY (idCandidat) REFERENCES CANDIDAT(idCandidat);ALTER TABLE PERSONNE ADD CONSTRAINT FK_PERSONNE_idCandidat_CANDIDAT FOREIGN KEY (idCandidat_CANDIDAT) REFERENCES CANDIDAT(idCandidat);ALTER TABLE EQUIPE ADD CONSTRAINT FK_EQUIPE_idCandidat FOREIGN KEY (idCandidat) REFERENCES CANDIDAT(idCandidat);ALTER TABLE CANDIDAT ADD CONSTRAINT FK_CANDIDAT_idCompetition FOREIGN KEY (idCompetition) REFERENCES COMPETITION(idCompetition);
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.10 sec)
+Enregistrements: 0  Doublons: 0  Avertissements: 0
+
+Query OK, 0 rows affected (0.10 sec)
+Enregistrements: 0  Doublons: 0  Avertissements: 0
+
+Query OK, 0 rows affected (0.08 sec)
+Enregistrements: 0  Doublons: 0  Avertissements: 0
+
+Query OK, 0 rows affected (0.10 sec)
+Enregistrements: 0  Doublons: 0  Avertissements: 0
+
+mysql> show tables ;
++---------------------------------+
+| Tables_in_inscriptionssportives |
++---------------------------------+
+| candidat                        |
+| competition                     |
+| equipe                          |
+| personne                        |
++---------------------------------+
+4 rows in set (0.00 sec)
+
+mysql> notee ;
