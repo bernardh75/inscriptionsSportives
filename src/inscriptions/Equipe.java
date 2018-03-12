@@ -52,7 +52,7 @@ public class Equipe extends Candidat
 		membre.remove(this);
 		return membres.remove(membre);
 	}
-
+	
 	@Override
 	public void delete()
 	{

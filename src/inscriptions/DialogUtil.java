@@ -1,11 +1,14 @@
 package inscriptions;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 import commandLineMenus.*;
 import commandLineMenus.examples.employees.core.*;
 import commandLineMenus.examples.employees.userDialog.PersonnelConsole;
+import commandLineMenus.rendering.examples.util.InOut;
 
 import static commandLineMenus.rendering.examples.util.InOut.*;
 
@@ -42,12 +45,14 @@ public class DialogUtil {
 		return menu;
 	}
 	
+	
+	
 	// Menus
 	
 	
 	private Menu menuCompetitions()
 	{
-		Menu menu = new Menu("Gérer les compétitions", "l");
+		Menu menu = new Menu("Gérer les compétitions", "c");
 		menu.add(afficherCompetitions());
 		menu.add(ajouterCompetition());
 		menu.add(selectionnerCompetition());
@@ -57,7 +62,7 @@ public class DialogUtil {
 	
 	private Menu menuEquipes()
 	{
-		Menu menu = new Menu("Gérer les équipes", "l");
+		Menu menu = new Menu("Gérer les équipes", "e");
 		menu.add(afficherEquipes());
 		menu.add(ajouterEquipe());
 		menu.add(selectionnerEquipe());
@@ -67,7 +72,7 @@ public class DialogUtil {
 	
 	private Menu menuPersonnes()
 	{
-		Menu menu = new Menu("Gérer les personnes", "l");
+		Menu menu = new Menu("Gérer les personnes", "p");
 		menu.add(afficherPersonnes());
 		menu.add(ajouterPersonne());
 		menu.add(selectionnerPersonne());
@@ -100,7 +105,11 @@ public class DialogUtil {
 	
 	private Option ajouterCompetition()
 	{
-		return new Option("Ajouter une compétition", "a", () -> {inscriptions.createCompetition(getString("Entrez le nom de votre compétition : "), null, false);});
+		 return new Option("Ajouter une compétition", "a", () -> {
+	            final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+	            String dateCloture = InOut.getString("Entrer la date de clôture des inscriptions de la compétition : ");
+	            final LocalDate localDate = LocalDate.parse(dateCloture, DATE_FORMAT);
+	            inscriptions.createCompetition(getString("nom : "),localDate,getInt("0 - Compétition de personnes \n1 - Compétition d'équipes : ")==0);});
 	}
 	
 	private Option ajouterEquipe()
@@ -110,7 +119,9 @@ public class DialogUtil {
 	
 	private Option ajouterPersonne()
 	{
-		return new Option("Ajouter une personne", "a", () -> {inscriptions.createPersonne(getString("Entrez le nom de votre personne : \n"), null, null);});
+		return new Option("Ajouter une personne", "a", () -> {inscriptions.createPersonne(getString("Entrez le nom de votre personne : \n"), 
+																						  getString("Entrez le prenom de votre personne : \n"), 
+																						  getString("Entrez le mail de votre personne : \n"));});
 	}
 
 	
@@ -171,8 +182,8 @@ public class DialogUtil {
     {
         Menu menu = new Menu("Editer " + equipe.getNom());
         menu.add(afficherMembres(equipe));
-//        menu.add(ajouterMembre(equipe));
-//        menu.add(supprimerMembre(equipe));
+        menu.add(ajouterMembre(equipe));
+        menu.add(supprimerMembre(equipe));
 //        menu.add(modifierEquipe(equipe));
         menu.add(supprimerEquipe(equipe));
         menu.addBack("q");
@@ -181,7 +192,7 @@ public class DialogUtil {
 	
 	private Option afficherMembres(final Equipe equipe)
 	{
-		return new Option("Afficher l'équipe", "l", 
+		return new Option("Afficher l'équipe", "a", 
 				() -> 
 				{
 					System.out.println(equipe.getMembres());
@@ -189,27 +200,35 @@ public class DialogUtil {
 		);
 	}
 	
-//	private Option ajouterMembre()
-//	{
-//		return new Option("Ajouter un membre", "a", () -> {Equipe.add(null);});
-//	}
+	private List<Personne> ajouterMembre(final Equipe equipe)
+	{
+		return new List<>("Ajouter un membre", "m", 
+				() -> new ArrayList<>(equipe.getMembres()),
+				(index, element) -> {equipe.add(element);}
+				);
+	}
 	
-//	private Option supprimerMembre()
-//	{
-//		return new Option("Supprimer un membre", "a", () -> {Equipe.remove(null);});
-//	}
+	private List<Personne> supprimerMembre(final Equipe equipe)
+	{
+		return new List<>("Supprimer un membre", "s", 
+				() -> new ArrayList<>(equipe.getMembres()),
+				(index, element) -> {equipe.remove(element);}
+				);
+	}
 	
 //	private Option modifierEquipe()
 //	{
-//		return new Option("Ajouter un membre", "a", () -> {Equipe.add(null);});
+//		return new Option("Ajouter un membre", "a", () -> {Equipe.toString();});
 //	}
 	
-	private List<Equipe> supprimerEquipe(final Equipe equipe)
+	private Option supprimerEquipe(final Equipe equipe)
 	{
-		return new List<>("Supprimer une équipe", "s", 
-				() -> new ArrayList<>(inscriptions.getEquipes()),
-				(index, element) -> {element.delete();}
-				);
+		return new Option("Supprimer l'équipe", "d", 
+				() -> 
+				{
+					equipe.delete();
+				}
+		);
 	}
 	
 	
@@ -221,17 +240,23 @@ public class DialogUtil {
 	private Menu editerPersonne(Personne personne)
 	{
 	    Menu menu = new Menu("Editer " + personne.getNom());
-//	    menu.add(modifierPersonne(personne));
+	    menu.add(modifierPersonne(personne));
 //	    menu.add(supprimerPersonne(personne));
 	    menu.addBack("q");
 	    return menu;
 	}
 	
-//	private Option modifierPersonne(Personne personne)
-//	{
-//		return new Option("Modifier une personne", "a", () -> {Equipe.add(null);});
-//	}
-//	
+	private Option modifierPersonne(Personne personne)
+	{
+		return new Option("Modifier une personne", "a", () -> {
+			
+			personne.setNom(getString("Nouveau nom : \n"));
+			personne.setPrenom(getString("Nouveau prenom : \n"));
+			personne.setMail(getString("Nouveau mail : \n"));
+			
+		});
+	}
+	
 //	private Option supprimerPersonne(Personne personne)
 //	{
 //		return new Option("Supprimer une personne", "a", () -> {Personne.delete();});
@@ -239,6 +264,8 @@ public class DialogUtil {
 	
 
 	
+	
+	// Quitter
 	
 	
 	
@@ -264,6 +291,10 @@ public class DialogUtil {
 	{
 		return new Option("Quitter sans enregistrer", "a", Action.QUIT);
 	}
+	
+	
+	
+	// Main 
 	
 	
 	
