@@ -161,18 +161,74 @@ public class DialogUtil {
 	private Menu editerCompetition(Competition competition)
     {
         Menu menu = new Menu("Editer " + competition.getNom());
-//        menu.add(afficherCandidats(competition));
-//        menu.add(ajouterPersonneCompetition(competition));
-//        menu.add(ajouterEquipeCompetition(competition));
-//        menu.add(supprimerCandidat(competition));
-//        menu.add(modifierCompetition(competition));
-//        menu.add(supprimer(competition));
+        menu.add(afficherCandidats(competition));
+        if (!competition.estEnEquipe())
+        	menu.add(ajouterPersonneCompetition(competition));
+        if (competition.estEnEquipe())
+        	menu.add(ajouterEquipeCompetition(competition));
+        menu.add(supprimerCandidat(competition));
+        menu.add(modifierCompetition(competition));
+        menu.add(supprimerCompetition(competition));
         menu.addBack("q");
         return menu;
     }
 	
+	private Option afficherCandidats(final Competition competition)
+	{
+		return new Option("Afficher les candidats", "a", 
+				() -> 
+				{
+					System.out.println(competition.getCandidats());
+				}
+		);
+	}
 	
+	private List<Candidat> ajouterPersonneCompetition(final Competition competition)
+	{
+		return new List<>("Ajouter une personne dans la compétition", "m", 
+				() -> new ArrayList<>(inscriptions.getPersonnes()),
+				(index, element) -> {competition.add((Personne) element);}
+				);
+	}
 	
+	private List<Candidat> ajouterEquipeCompetition(final Competition competition)
+	{
+		return new List<>("Ajouter une équipe dans la compétition", "e", 
+				() -> new ArrayList<>(inscriptions.getEquipes()),
+				(index, element) -> {competition.add((Equipe) element);}
+				);
+	}
+	
+	private List<Candidat> supprimerCandidat(final Competition competition)
+	{
+		return new List<>("Supprimer un candidat", "s", 
+				() -> new ArrayList<>(competition.getCandidats()),
+				(index, element) -> {competition.remove(element);}
+				);
+	}
+	
+	private Option modifierCompetition(final Competition competition)
+	{
+		return new Option("modifier une compétition", "c", 
+				() -> 
+				{
+					competition.setNom(getString("Nouveau nom : \n"));
+					competition.setDateCloture(competition.getDateCloture(), null);
+				}
+		);
+	}
+	
+	private Option supprimerCompetition(final Competition competition)
+	{
+		return new Option("Supprimer une compétition", "d", 
+				() -> 
+				{
+					competition.delete();
+				}
+		);
+	}
+	
+
 	
 	// Selectionner : Equipe
 	
@@ -184,7 +240,6 @@ public class DialogUtil {
         menu.add(afficherMembres(equipe));
         menu.add(ajouterMembre(equipe));
         menu.add(supprimerMembre(equipe));
-//        menu.add(modifierEquipe(equipe));
         menu.add(supprimerEquipe(equipe));
         menu.addBack("q");
         return menu;
@@ -203,7 +258,7 @@ public class DialogUtil {
 	private List<Personne> ajouterMembre(final Equipe equipe)
 	{
 		return new List<>("Ajouter un membre", "m", 
-				() -> new ArrayList<>(equipe.getMembres()),
+				() -> new ArrayList<>(inscriptions.getPersonnes()),
 				(index, element) -> {equipe.add(element);}
 				);
 	}
@@ -215,11 +270,6 @@ public class DialogUtil {
 				(index, element) -> {equipe.remove(element);}
 				);
 	}
-	
-//	private Option modifierEquipe()
-//	{
-//		return new Option("Ajouter un membre", "a", () -> {Equipe.toString();});
-//	}
 	
 	private Option supprimerEquipe(final Equipe equipe)
 	{
