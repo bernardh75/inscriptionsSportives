@@ -133,10 +133,10 @@ public class Inscriptions implements Serializable
 	{
 		competitions.remove(competition);
 	}
-	
-	void delete(Candidat candidat)
-	{
-		candidats.remove(candidat);
+
+	void remove(Candidat candidat) 
+	{	
+		candidats.remove(candidat);	
 	}
 	
 	/**
@@ -242,11 +242,12 @@ public class Inscriptions implements Serializable
 	
 	public static void main(String[] args)
 	{
-//		final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-//		final LocalDate localdate = LocalDate.parse("01-01-2020", DATE_FORMAT);
-//		
-//		Inscriptions.getInscriptions();
-//		Competition flechettes = inscriptions.createCompetition("Mondial flechettes", localdate, false);
+		final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		final LocalDate localdate = LocalDate.parse("01-01-2020", DATE_FORMAT);
+		
+		Inscriptions.getInscriptions();
+		Competition flechettes = inscriptions.createCompetition("Mondial flechettes", localdate, false);
+		System.out.println(flechettes.inscriptionsOuvertes());
 //		
 //		Personne tony = inscriptions.createPersonne("tony", "Dent de pomb", "fgg");
 //		
@@ -261,6 +262,7 @@ public class Inscriptions implements Serializable
 //		
 		
 	}
+
 
 
 	

@@ -160,23 +160,17 @@ public class DialogUtil {
 	
 	private Menu editerCompetition(Competition competition)
     {
-        Menu menu = new Menu("Editer " + competition.getNom() /*+ ((competition.inscriptionsOuvertes()) ? "" : "Inscriptions closes")*/);
-        if (competition.inscriptionsOuvertes()){
-        	
-	        menu.add(afficherCompetition(competition));
-	        menu.add(afficherCandidats(competition));
-	        if (!competition.estEnEquipe())
-	        	menu.add(ajouterPersonneCompetition(competition));
-	        if (competition.estEnEquipe())
-	        	menu.add(ajouterEquipeCompetition(competition));
-	        menu.add(supprimerCandidat(competition));
-	        menu.add(modifierCompetition(competition));
-	        menu.add(supprimerCompetition(competition));
-	        menu.addBack("q");
-	        
-        }else{
-        	System.out.println("Inscriptions closes!");
-        }
+        Menu menu = new Menu("Editer " + competition.getNom() + ((competition.inscriptionsOuvertes()) ? "" : " Inscriptions closes !"), competition.getNom(), "");
+        menu.add(afficherCompetition(competition));
+        menu.add(afficherCandidats(competition));
+        if (!competition.estEnEquipe())
+        	menu.add(ajouterPersonneCompetition(competition));
+        if (competition.estEnEquipe())
+        	menu.add(ajouterEquipeCompetition(competition));
+        menu.add(supprimerCandidat(competition));
+        menu.add(modifierCompetition(competition));
+        menu.add(supprimerCompetition(competition));
+        menu.addBack("q");
         return menu;
     }
 	
@@ -310,7 +304,7 @@ public class DialogUtil {
 	{
 	    Menu menu = new Menu("Editer " + personne.getNom());
 	    menu.add(modifierPersonne(personne));
-//	    menu.add(supprimerPersonne(personne));
+        menu.add(supprimerPersonne(personne));
 	    menu.addBack("q");
 	    return menu;
 	}
@@ -326,10 +320,10 @@ public class DialogUtil {
 		});
 	}
 	
-//	private Option supprimerPersonne(Personne personne)
-//	{
-//		return new Option("Supprimer une personne", "a", () -> {Personne.delete();});
-//	}
+	private Option supprimerPersonne(Personne personne)
+	{
+		return new Option("Supprimer une personne", "a", () -> {personne.delete();});
+	}
 	
 
 	
