@@ -8,6 +8,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Collections;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.SortedSet;
 import java.util.TreeSet;
 import commandLineMenus.*;
@@ -128,7 +129,7 @@ public class Inscriptions implements Serializable
 		return equipe;
 	}
 	
-	void delete(Competition competition)
+	void remove(Competition competition)
 	{
 		competitions.remove(competition);
 	}
@@ -241,66 +242,24 @@ public class Inscriptions implements Serializable
 	
 	public static void main(String[] args)
 	{
-		/*		Inscriptions inscriptions = Inscriptions.getInscriptions();
-//		Competition flechettes = inscriptions.createCompetition("Mondial de flÃ©chettes", null, false);
-//		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"), 
-//				boris = inscriptions.createPersonne("Boris", "le Hachoir", "ytreza");
+//		final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+//		final LocalDate localdate = LocalDate.parse("01-01-2020", DATE_FORMAT);
+//		
+//		Inscriptions.getInscriptions();
+//		Competition flechettes = inscriptions.createCompetition("Mondial flechettes", localdate, false);
+//		
+//		Personne tony = inscriptions.createPersonne("tony", "Dent de pomb", "fgg");
+//		
 //		flechettes.add(tony);
-//		Equipe lesManouches = inscriptions.createEquipe("Les Manouches");
-//		lesManouches.add(boris);
-//		lesManouches.add(tony);
-//		System.out.println(inscriptions);
-//		lesManouches.delete();
-//		System.out.println(inscriptions);
+//		
+//		System.out.println(flechettes);
+//		System.out.println(flechettes.getCandidats());
+//		
+//		flechettes.delete();
+//		
+//		System.out.println(flechettes);
+//		
 		
-		Menu rootMenu = new Menu ("Inscription Sportive");
-		Menu addCompetition = new Menu("Gérer les compétions", "1");
-		Menu addEquipe = new Menu("Gérer les personnes", "2");
-		Menu addPersonne = new Menu("Gérer les équipes", "3");
-		
-		rootMenu.add(addCompetition);
-		rootMenu.add(addEquipe);
-		rootMenu.add(addPersonne);
-		rootMenu.addQuit("q");
-		
-		addCompetition.add(
-				new Option ("Ajouter une compétition", "1", new Action()
-				{
-					@Override
-					public void optionSelected() {
-						String nom = InOut.getString("Entrer le nom de la compétition : \n"); 
-						System.out.println("\n");
-					}
-				}));
-
-		addEquipe.add(
-				new Option ("Ajouter une équipe", "1", new Action()
-				{
-					@Override
-					public void optionSelected() {
-						String nom = InOut.getString("Entrer le nom de l'équipe : \n"); 
-						System.out.println("\n");
-					}
-				}));
-		addPersonne.add(
-				new Option ("Ajouter une personne", "1", new Action()
-				{
-					@Override
-					public void optionSelected() {
-						String nom = InOut.getString("Entrer votre nom : \n"); 
-						System.out.println("\n");
-					}
-				}));	
-		
-		rootMenu.start();		try
-		{
-			inscriptions.sauvegarder();
-		} 
-		catch (IOException e)
-		{
-			System.out.println("Sauvegarde impossible." + e);
-		}
-		*/
 	}
 
 

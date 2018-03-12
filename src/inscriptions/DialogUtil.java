@@ -109,7 +109,7 @@ public class DialogUtil {
 	            final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 	            String dateCloture = InOut.getString("Entrer la date de clôture des inscriptions de la compétition : ");
 	            final LocalDate localDate = LocalDate.parse(dateCloture, DATE_FORMAT);
-	            inscriptions.createCompetition(getString("nom : "),localDate,getInt("0 - Compétition de personnes \n1 - Compétition d'équipes : ")==0);});
+	            inscriptions.createCompetition(getString("nom : "),localDate,getInt("0 - Compétition de personnes \n1 - Compétition d'équipes : ")==1);});
 	}
 	
 	private Option ajouterEquipe()
@@ -160,7 +160,8 @@ public class DialogUtil {
 	
 	private Menu editerCompetition(Competition competition)
     {
-        Menu menu = new Menu("Editer " + competition.getNom());
+        Menu menu = new Menu("Editer " + competition.getNom()/* + ((!competition.inscriptionsOuvertes()) ? "" : "Inscriptions closes")*/);
+        menu.add(afficherCompetition(competition));
         menu.add(afficherCandidats(competition));
         if (!competition.estEnEquipe())
         	menu.add(ajouterPersonneCompetition(competition));
@@ -172,6 +173,18 @@ public class DialogUtil {
         menu.addBack("q");
         return menu;
     }
+	
+	private Option afficherCompetition(final Competition competition)
+	{
+		return new Option("Afficher la compétition", "lc", 
+				() -> 
+				{
+					System.out.println(competition.getNom());
+					System.out.println(competition.getDateCloture());
+					System.out.println(competition.estEnEquipe());
+				}
+		);
+	}
 	
 	private Option afficherCandidats(final Competition competition)
 	{

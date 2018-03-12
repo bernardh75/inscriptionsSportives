@@ -170,7 +170,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	{
 		for (Candidat candidat : candidats)
 			remove(candidat);
-		((Set<Candidat>) inscriptions).remove(this);
+		inscriptions.remove(this);
 	}
 	
 	@Override
