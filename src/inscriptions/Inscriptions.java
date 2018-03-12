@@ -7,16 +7,15 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Collections;
-import java.util.InputMismatchException;
 import java.time.LocalDate;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-
+import commandLineMenus.*;
+import commandLineMenus.rendering.examples.util.InOut;
 /**
- * Point d'entrée dans l'application, un seul objet de type Inscription
- * permet de gérer les compétitions, candidats (de type equipe ou personne)
- * ainsi que d'inscrire des candidats à des compétition.
+ * Point d'entrÃ©e dans l'application, un seul objet de type Inscription
+ * permet de gÃ©rer les compÃ©titions, candidats (de type equipe ou personne)
+ * ainsi que d'inscrire des candidats Ã  des compÃ©tition.
  */
 
 public class Inscriptions implements Serializable
@@ -33,7 +32,7 @@ public class Inscriptions implements Serializable
 	}
 	
 	/**
-	 * Retourne les compétitions.
+	 * Retourne les compÃ©titions.
 	 * @return
 	 */
 	
@@ -43,7 +42,7 @@ public class Inscriptions implements Serializable
 	}
 	
 	/**
-	 * Retourne tous les candidats (personnes et équipes confondues).
+	 * Retourne tous les candidats (personnes et Ã©quipes confondues).
 	 * @return
 	 */
 	
@@ -67,7 +66,7 @@ public class Inscriptions implements Serializable
 	}
 
 	/**
-	 * Retourne toutes les équipes.
+	 * Retourne toutes les Ã©quipes.
 	 * @return
 	 */
 	
@@ -81,7 +80,7 @@ public class Inscriptions implements Serializable
 	}
 
 	/**
-	 * Créée une compétition. Ceci est le seul moyen, il n'y a pas
+	 * CrÃ©Ã©e une compÃ©tition. Ceci est le seul moyen, il n'y a pas
 	 * de constructeur public dans {@link Competition}.
 	 * @param nom
 	 * @param dateCloture
@@ -98,9 +97,8 @@ public class Inscriptions implements Serializable
 	}
 
 	/**
-	 * Créée une Candidat de type Personne. Ceci est le seul moyen, il n'y a pas
+	 * CrÃ©Ã©e une Candidat de type Personne. Ceci est le seul moyen, il n'y a pas
 	 * de constructeur public dans {@link Personne}.
-
 	 * @param nom
 	 * @param prenom
 	 * @param mail
@@ -115,7 +113,7 @@ public class Inscriptions implements Serializable
 	}
 	
 	/**
-	 * Créée une Candidat de type équipe. Ceci est le seul moyen, il n'y a pas
+	 * CrÃ©Ã©e une Candidat de type Ã©quipe. Ceci est le seul moyen, il n'y a pas
 	 * de constructeur public dans {@link Equipe}.
 	 * @param nom
 	 * @param prenom
@@ -130,19 +128,19 @@ public class Inscriptions implements Serializable
 		return equipe;
 	}
 	
-	void remove(Competition competition)
+	void delete(Competition competition)
 	{
 		competitions.remove(competition);
 	}
 	
-	void remove(Candidat candidat)
+	void delete(Candidat candidat)
 	{
 		candidats.remove(candidat);
 	}
 	
 	/**
 	 * Retourne l'unique instance de cette classe.
-	 * Crée cet objet s'il n'existe déjà.
+	 * CrÃ©e cet objet s'il n'existe dÃ©jÃ .
 	 * @return l'unique objet de type {@link Inscriptions}.
 	 */
 	
@@ -159,8 +157,8 @@ public class Inscriptions implements Serializable
 	}
 
 	/**
-	 * Retourne un object inscriptions vide. Ne modifie pas les compétitions
-	 * et candidats déjà existants.
+	 * Retourne un object inscriptions vide. Ne modifie pas les compÃ©titions
+	 * et candidats dÃ©jÃ  existants.
 	 */
 	
 	public Inscriptions reinitialiser()
@@ -170,8 +168,8 @@ public class Inscriptions implements Serializable
 	}
 
 	/**
-	 * Efface toutes les modifications sur Inscriptions depuis la dernière sauvegarde.
-	 * Ne modifie pas les compétitions et candidats déjà existants.
+	 * Efface toutes les modifications sur Inscriptions depuis la derniÃ¨re sauvegarde.
+	 * Ne modifie pas les compÃ©titions et candidats dÃ©jÃ  existants.
 	 */
 	
 	public Inscriptions recharger()
@@ -206,7 +204,7 @@ public class Inscriptions implements Serializable
 	
 	/**
 	 * Sauvegarde le gestionnaire pour qu'il soit ouvert automatiquement 
-	 * lors d'une exécution ultérieure du programme.
+	 * lors d'une exÃ©cution ultÃ©rieure du programme.
 	 * @throws IOException 
 	 */
 	
@@ -243,21 +241,58 @@ public class Inscriptions implements Serializable
 	
 	public static void main(String[] args)
 	{
-//	try {
-		Inscriptions inscriptions = Inscriptions.getInscriptions();
-		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", null, false);
-		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"), 
-				boris = inscriptions.createPersonne("Boris", "le Hachoir", "ytreza");
-		flechettes.add(tony);
-		Equipe lesManouches = inscriptions.createEquipe("Les Manouches");
-		lesManouches.add(boris);
-		lesManouches.add(tony);
-	
-		System.out.println(inscriptions);
-		lesManouches.delete();
-		System.out.println(inscriptions);
+		/*		Inscriptions inscriptions = Inscriptions.getInscriptions();
+//		Competition flechettes = inscriptions.createCompetition("Mondial de flÃ©chettes", null, false);
+//		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"), 
+//				boris = inscriptions.createPersonne("Boris", "le Hachoir", "ytreza");
+//		flechettes.add(tony);
+//		Equipe lesManouches = inscriptions.createEquipe("Les Manouches");
+//		lesManouches.add(boris);
+//		lesManouches.add(tony);
+//		System.out.println(inscriptions);
+//		lesManouches.delete();
+//		System.out.println(inscriptions);
 		
-		try
+		Menu rootMenu = new Menu ("Inscription Sportive");
+		Menu addCompetition = new Menu("Gérer les compétions", "1");
+		Menu addEquipe = new Menu("Gérer les personnes", "2");
+		Menu addPersonne = new Menu("Gérer les équipes", "3");
+		
+		rootMenu.add(addCompetition);
+		rootMenu.add(addEquipe);
+		rootMenu.add(addPersonne);
+		rootMenu.addQuit("q");
+		
+		addCompetition.add(
+				new Option ("Ajouter une compétition", "1", new Action()
+				{
+					@Override
+					public void optionSelected() {
+						String nom = InOut.getString("Entrer le nom de la compétition : \n"); 
+						System.out.println("\n");
+					}
+				}));
+
+		addEquipe.add(
+				new Option ("Ajouter une équipe", "1", new Action()
+				{
+					@Override
+					public void optionSelected() {
+						String nom = InOut.getString("Entrer le nom de l'équipe : \n"); 
+						System.out.println("\n");
+					}
+				}));
+		addPersonne.add(
+				new Option ("Ajouter une personne", "1", new Action()
+				{
+					@Override
+					public void optionSelected() {
+						String nom = InOut.getString("Entrer votre nom : \n"); 
+						System.out.println("\n");
+					}
+				}));	
+		
+		rootMenu.start();		try
 		{
 			inscriptions.sauvegarder();
 		} 
@@ -265,10 +300,9 @@ public class Inscriptions implements Serializable
 		{
 			System.out.println("Sauvegarde impossible." + e);
 		}
+		*/
 	}
-//	catch(InputMismatchException | java.lang.NullPointerException | java.lang.ArrayIndexOutOfBoundsException | IllegalArgumentException e)
-//	{
-//		System.out.println(e+" Inscription invalide");
-//	}
-//}
+
+
+	
 }

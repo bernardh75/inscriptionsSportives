@@ -72,7 +72,7 @@ public abstract class Candidat implements Comparable<Candidat>, Serializable
 	{
 		for (Competition c : competitions)
 			c.remove(this);
-		inscriptions.remove(this);
+		((Set<Competition>) inscriptions).remove(this);
 	}
 	
 	@Override
