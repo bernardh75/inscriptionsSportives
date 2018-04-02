@@ -107,7 +107,7 @@ public class DialogUtil {
 	{
 		 return new Option("Ajouter une compétition", "a", () -> {
 	            final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-	            String dateCloture = InOut.getString("Entrer la date de clôture des inscriptions de la compétition : ");
+	            String dateCloture = InOut.getString("Entrer la date de clôture des inscriptions de la compétition (jj-mm-aaaa) : ");
 	            final LocalDate localDate = LocalDate.parse(dateCloture, DATE_FORMAT);
 	            inscriptions.createCompetition(getString("nom : "),localDate,getInt("0 - Compétition de personnes \n1 - Compétition d'équipes : ")==1);});
 	}
