@@ -13,6 +13,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import commandLineMenus.*;
 import commandLineMenus.rendering.examples.util.InOut;
+import hibernateis.passerelle;
 /**
  * Point d'entrÃ©e dans l'application, un seul objet de type Inscription
  * permet de gÃ©rer les compÃ©titions, candidats (de type equipe ou personne)
@@ -248,7 +249,10 @@ public class Inscriptions implements Serializable
 		Inscriptions.getInscriptions();
 		Competition flechettes = inscriptions.createCompetition("Mondial flechettes", localdate, false);
 		System.out.println(flechettes.inscriptionsOuvertes());
-//		
+
+		passerelle lien = new passerelle();
+		lien.open();
+		lien.close();
 //		Personne tony = inscriptions.createPersonne("tony", "Dent de pomb", "fgg");
 //		
 //		flechettes.add(tony);
