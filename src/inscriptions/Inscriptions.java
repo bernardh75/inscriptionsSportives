@@ -249,10 +249,8 @@ public class Inscriptions implements Serializable
 		final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		final LocalDate localdate = LocalDate.parse("01-01-2020", DATE_FORMAT);
 		
-		Inscriptions.getInscriptions();
-		Competition flechettes = inscriptions.createCompetition("Mondial flechettes", localdate, false);
-		System.out.println(flechettes.inscriptionsOuvertes());
-
+		
+		
 		passerelle lien = new passerelle();
 		lien.open();
 		
