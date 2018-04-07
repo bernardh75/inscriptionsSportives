@@ -5,6 +5,8 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 import org.hibernate.annotations.Cascade;
@@ -20,7 +22,11 @@ public class Personne extends Candidat
 	private static final long serialVersionUID = 4434646724271327254L;
 	private String prenom, mail;
 	
-	@OneToOne(mappedBy="Personne")
+	@ManyToOne
+	@Cascade(value= { CascadeType.SAVE_UPDATE })
+	private Equipe equipe ;
+	
+	@OneToMany(mappedBy="personne")
 	@Cascade(value= { CascadeType.ALL })
 	@SortNatural
 	private Set<Equipe> equipes;

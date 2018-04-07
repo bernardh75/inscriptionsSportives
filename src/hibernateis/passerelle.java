@@ -64,7 +64,7 @@ public class passerelle
 		session.flush();
 	}
 
-	static void save(Object o)
+	public static void save(Object o)
 	{
 		Transaction tx = session.beginTransaction();
 		session.save(o);

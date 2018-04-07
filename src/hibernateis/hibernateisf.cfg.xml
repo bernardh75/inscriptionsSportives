@@ -14,10 +14,10 @@
         <property name="hibernate.show_sql">false</property>
         <property name="jta.UserTransaction">
         	java:comp/UserTransaction</property>
-        <mapping class="hibernate.relations.Candidat" />
-        <mapping class="hibernate.relations.Competition" />
-        <mapping class="hibernate.relations.Equipe" />
-        <mapping class="hibernate.relations.Personne" />
+        <mapping class="inscriptions.Candidat" />
+        <mapping class="inscriptions.Competition" />
+        <mapping class="inscriptions.Equipe" />
+        <mapping class="inscriptions.Personne" />
         
         
     </session-factory>

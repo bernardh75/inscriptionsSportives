@@ -95,6 +95,7 @@ public class Inscriptions implements Serializable
 	{
 		Competition competition = new Competition(this, nom, dateCloture, enEquipe);
 		competitions.add(competition);
+		passerelle.save(competition);
 		return competition;
 	}
 
@@ -111,6 +112,7 @@ public class Inscriptions implements Serializable
 	{
 		Personne personne = new Personne(this, nom, prenom, mail);
 		candidats.add(personne);
+		passerelle.save(personne);
 		return personne;
 	}
 	
@@ -127,6 +129,7 @@ public class Inscriptions implements Serializable
 	{
 		Equipe equipe = new Equipe(this, nom);
 		candidats.add(equipe);
+		passerelle.save(equipe);
 		return equipe;
 	}
 	
@@ -252,6 +255,11 @@ public class Inscriptions implements Serializable
 
 		passerelle lien = new passerelle();
 		lien.open();
+		
+        Inscriptions inscriptions = Inscriptions.getInscriptions();
+        DialogUtil personnelc = new DialogUtil(inscriptions);
+        personnelc.start();
+		
 		lien.close();
 //		Personne tony = inscriptions.createPersonne("tony", "Dent de pomb", "fgg");
 //		
