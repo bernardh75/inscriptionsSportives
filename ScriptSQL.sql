@@ -28,6 +28,7 @@ CREATE TABLE CANDIDAT(
 CREATE TABLE COMPETITION(
         idCompetition  int (11) Auto_increment  NOT NULL ,
         nomCompetition Varchar (60) ,
+		dateCloture DATE,
         PRIMARY KEY (idCompetition )
 )ENGINE=InnoDB;
 

@@ -4,14 +4,25 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+import org.hibernate.annotations.SortNatural;
+
 /**
  * Représente une personne physique pouvant s'inscrire à une compétition.
  */
-
+@Entity
 public class Personne extends Candidat
 {
 	private static final long serialVersionUID = 4434646724271327254L;
 	private String prenom, mail;
+	
+	@OneToOne(mappedBy="Personne")
+	@Cascade(value= { CascadeType.ALL })
+	@SortNatural
 	private Set<Equipe> equipes;
 	
 	Personne(Inscriptions inscriptions, String nom, String prenom, String mail)
