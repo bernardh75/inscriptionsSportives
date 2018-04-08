@@ -86,7 +86,7 @@ public class Inscriptions implements Serializable
 	 * CrÃ©Ã©e une compÃ©tition. Ceci est le seul moyen, il n'y a pas
 	 * de constructeur public dans {@link Competition}.
 	 * @param nom
-	 * @param date
+	 * @param <
 	 * @param enEquipe
 	 * @return
 	 */

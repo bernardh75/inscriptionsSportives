@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import java.time.LocalDate;
 import java.util.Collections;
-
+import java.util.Date;
 import org.junit.Test;
 
 import inscriptions.Competition;
@@ -17,7 +17,7 @@ public class TestInscriptions {
 	@Test
 	public void testcreateCompetition() {
 		
-		Competition compet = Inscriptions.getInscriptions().createCompetition("test",LocalDate.now() , true );
+		Competition compet = Inscriptions.getInscriptions().createCompetition("test",Date.now() , true );
 		assertEquals(compet.getNom(), "test");
 		assertEquals(compet.estEnEquipe(), true);
 	}

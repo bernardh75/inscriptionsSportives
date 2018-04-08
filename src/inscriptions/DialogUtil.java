@@ -110,7 +110,7 @@ public class DialogUtil {
 	private Option ajouterCompetition()
 	{
 		 return new Option("Ajouter une compétition", "a", () -> {
-	            String dateCloture = InOut.getString("Entrer la date de clôture des inscriptions de la compétition (JJ-MM-AAAA) : ");
+	            String dateCloture = InOut.getString("Entrer la date de clôture des inscriptions de la compétition (AAAA-MM-JJ) : ");
 				try {
 				  Date date = formatter.parse(dateCloture);
 				  inscriptions.createCompetition(InOut.getString("nom : "), date, InOut.getInt("0 - Compétition de personnes \n1 - Compétition d'équipes : ")==1);
@@ -331,7 +331,7 @@ public class DialogUtil {
 	
 	private Option supprimerPersonne(Personne personne)
 	{
-		return new Option("Supprimer une personne", "a", () -> {personne.delete();});
+		return new Option("Supprimer une personne", "b", () -> {personne.delete();});
 	}
 	
 

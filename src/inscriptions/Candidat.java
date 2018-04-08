@@ -27,16 +27,15 @@ public abstract class Candidat implements Comparable<Candidat>, Serializable
 	private static final long serialVersionUID = -6035399822298694746L;
 	@Transient
 	private Inscriptions inscriptions;
+	
 	private String nom;
 	
-	@OneToMany(mappedBy="candidat")
+	@OneToMany(targetEntity=Candidat.class, mappedBy = "competitions", fetch=FetchType.EAGER)
 	@Cascade(value= { CascadeType.ALL })
 	@SortNatural
 	
 	private Set<Competition> competitions;
 	
-	@ManyToOne
-	@Cascade(value= { CascadeType.SAVE_UPDATE })
 	private Competition competition ;
 	
 

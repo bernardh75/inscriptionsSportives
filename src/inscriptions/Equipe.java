@@ -5,6 +5,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -23,11 +24,8 @@ public class Equipe extends Candidat
 {
 	private static final long serialVersionUID = 4147819927233466035L;
 	
-	@ManyToOne
-	@Cascade(value= { CascadeType.SAVE_UPDATE })
-	private Personne personne ;
 	
-	@OneToMany(mappedBy="equipe")
+	@ManyToMany
 	@Cascade(value= { CascadeType.ALL })
 	@SortNatural
 	private SortedSet<Personne> membres = new TreeSet<>();

@@ -32,13 +32,11 @@ public class Competition implements Comparable<Competition>, Serializable
 
 
 	
-	@OneToMany(mappedBy="competition")
+	@ManyToMany
 	@Cascade(value= { CascadeType.ALL })
 	@SortNatural
 	private Set<Candidat> candidats;
 	
-	@ManyToOne
-	@Cascade(value= { CascadeType.SAVE_UPDATE })
 	private Candidat candidat ;
 	
 	@Temporal(TemporalType.TIMESTAMP)

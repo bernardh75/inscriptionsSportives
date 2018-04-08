@@ -55,7 +55,7 @@ public class passerelle
 			session.close();
 	}
 
-	static void delete(Object o)
+	public static void delete(Object o)
 	{
 		transaction = session.beginTransaction();
 		session.delete(o);
