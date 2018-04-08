@@ -25,13 +25,14 @@ public abstract class Candidat implements Comparable<Candidat>, Serializable
     private int id;
 	
 	private static final long serialVersionUID = -6035399822298694746L;
+	@Transient
 	private Inscriptions inscriptions;
 	private String nom;
-	
 	
 	@OneToMany(mappedBy="candidat")
 	@Cascade(value= { CascadeType.ALL })
 	@SortNatural
+	
 	private Set<Competition> competitions;
 	
 	@ManyToOne

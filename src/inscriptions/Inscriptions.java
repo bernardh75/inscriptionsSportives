@@ -7,6 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Collections;
+import java.util.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.SortedSet;
@@ -85,15 +86,15 @@ public class Inscriptions implements Serializable
 	 * CrÃ©Ã©e une compÃ©tition. Ceci est le seul moyen, il n'y a pas
 	 * de constructeur public dans {@link Competition}.
 	 * @param nom
-	 * @param dateCloture
+	 * @param date
 	 * @param enEquipe
 	 * @return
 	 */
 	
 	public Competition createCompetition(String nom, 
-			LocalDate dateCloture, boolean enEquipe)
+			Date date, boolean enEquipe)
 	{
-		Competition competition = new Competition(this, nom, dateCloture, enEquipe);
+		Competition competition = new Competition(this, nom, date, enEquipe);
 		competitions.add(competition);
 		passerelle.save(competition);
 		return competition;
@@ -166,7 +167,7 @@ public class Inscriptions implements Serializable
 	 * et candidats dÃ©jÃ  existants.
 	 */
 	
-	public Inscriptions reinitialiser()
+	public static Inscriptions reinitialiser()
 	{
 		inscriptions = new Inscriptions();
 		return getInscriptions();
@@ -246,15 +247,11 @@ public class Inscriptions implements Serializable
 	
 	public static void main(String[] args)
 	{
-		final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-		final LocalDate localdate = LocalDate.parse("01-01-2020", DATE_FORMAT);
-		
-		
 		
 		passerelle lien = new passerelle();
 		lien.open();
 		
-        Inscriptions inscriptions = Inscriptions.getInscriptions();
+        Inscriptions inscriptions = Inscriptions.reinitialiser();
         DialogUtil personnelc = new DialogUtil(inscriptions);
         personnelc.start();
 		

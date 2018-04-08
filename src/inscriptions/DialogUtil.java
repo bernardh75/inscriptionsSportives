@@ -1,10 +1,12 @@
 package inscriptions;
 
 import java.io.IOException;
-import java.time.LocalDate;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
+import java.util.Date;
 import commandLineMenus.*;
 import commandLineMenus.examples.employees.core.*;
 import commandLineMenus.examples.employees.userDialog.PersonnelConsole;
@@ -13,6 +15,8 @@ import commandLineMenus.rendering.examples.util.InOut;
 import static commandLineMenus.rendering.examples.util.InOut.*;
 
 public class DialogUtil {
+	
+	SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 	
 	private Inscriptions inscriptions;
 	
@@ -106,10 +110,15 @@ public class DialogUtil {
 	private Option ajouterCompetition()
 	{
 		 return new Option("Ajouter une compétition", "a", () -> {
-	            final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 	            String dateCloture = InOut.getString("Entrer la date de clôture des inscriptions de la compétition (JJ-MM-AAAA) : ");
-	            final LocalDate localDate = LocalDate.parse(dateCloture, DATE_FORMAT);
-	            inscriptions.createCompetition(getString("nom : "),localDate,getInt("0 - Compétition de personnes \n1 - Compétition d'équipes : ")==1);});
+				try {
+				  Date date = formatter.parse(dateCloture);
+				  inscriptions.createCompetition(InOut.getString("nom : "), date, InOut.getInt("0 - Compétition de personnes \n1 - Compétition d'équipes : ")==1);
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	           });
 	}
 	
 	private Option ajouterEquipe()

@@ -3,16 +3,10 @@ package inscriptions;
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.Date;
-import java.time.LocalDate;
 import java.util.Set;
 import java.util.TreeSet;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
@@ -32,6 +26,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	private int numcompet;
 	
 	private static final long serialVersionUID = -2882150118573759729L;
+	@Transient
 	private Inscriptions inscriptions;
 	private String nom;
 
@@ -46,12 +41,14 @@ public class Competition implements Comparable<Competition>, Serializable
 	@Cascade(value= { CascadeType.SAVE_UPDATE })
 	private Candidat candidat ;
 	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date dateCloture;
 	
-	private LocalDate dateCloture;
+	@Column(columnDefinition="tinyint(1) default 0")
 	private boolean enEquipe = false;
 	
 
-	Competition(Inscriptions inscriptions, String nom, LocalDate dateCloture, boolean enEquipe)
+	Competition(Inscriptions inscriptions, String nom, Date dateCloture, boolean enEquipe)
 	{
 		this.enEquipe = enEquipe;
 		this.inscriptions = inscriptions;
@@ -87,8 +84,8 @@ public class Competition implements Comparable<Competition>, Serializable
 	
 	public boolean inscriptionsOuvertes()
 	{
-		LocalDate DateSys = LocalDate.now();
-		if(DateSys.isAfter(getDateCloture()))
+		Date DateSys = new Date();
+		if(DateSys.after(getDateCloture()))
 			return false;
 		else
 			return true;
@@ -99,7 +96,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	 * @return
 	 */
 	
-	public LocalDate getDateCloture()
+	public Date getDateCloture()
 	{
 		return dateCloture;
 	}
@@ -120,10 +117,10 @@ public class Competition implements Comparable<Competition>, Serializable
 	 * @param dateCloture
 	 */
 	
-	public void setDateCloture(LocalDate dateCloture, LocalDate newdateCloture)
+	public void setDateCloture(Date dateCloture, Date newdateCloture)
 	{
 		// TODO vérifier que l'on avance pas la date.
-		if (dateCloture.isAfter(this.dateCloture))
+		if (dateCloture.after(this.dateCloture))
 			System.out.println("Vous ne pouvez pas avancer la date");
 		else
 			this.dateCloture = dateCloture;

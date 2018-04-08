@@ -16,6 +16,7 @@ import org.hibernate.annotations.SortNatural;
 /**
  * Représente une personne physique pouvant s'inscrire à une compétition.
  */
+
 @Entity
 public class Personne extends Candidat
 {
@@ -30,6 +31,8 @@ public class Personne extends Candidat
 	@Cascade(value= { CascadeType.ALL })
 	@SortNatural
 	private Set<Equipe> equipes;
+	
+	
 	
 	Personne(Inscriptions inscriptions, String nom, String prenom, String mail)
 	{

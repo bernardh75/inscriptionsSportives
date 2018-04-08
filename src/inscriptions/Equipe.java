@@ -32,6 +32,8 @@ public class Equipe extends Candidat
 	@SortNatural
 	private SortedSet<Personne> membres = new TreeSet<>();
 	
+	
+	
 	Equipe(Inscriptions inscriptions, String nom)
 	{
 		super(inscriptions, nom);
