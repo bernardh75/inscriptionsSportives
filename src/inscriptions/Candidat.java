@@ -36,8 +36,6 @@ public abstract class Candidat implements Comparable<Candidat>, Serializable
 	
 	private Set<Competition> competitions;
 	
-	private Competition competition ;
-	
 
 	
 	Candidat(Inscriptions inscriptions, String nom)
