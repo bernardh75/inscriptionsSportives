@@ -26,8 +26,10 @@ public class Competition implements Comparable<Competition>, Serializable
 	private int numcompet;
 	
 	private static final long serialVersionUID = -2882150118573759729L;
+	
 	@Transient
 	private Inscriptions inscriptions;
+	
 	private String nom;
 
 
@@ -44,9 +46,6 @@ public class Competition implements Comparable<Competition>, Serializable
 	@Column(columnDefinition="tinyint(1) default 0")
 	private boolean enEquipe = false;
 	
-	@ManyToOne
-	@Cascade(value = { CascadeType.SAVE_UPDATE})
-	private Candidat candidat;
 	
 
 	Competition(Inscriptions inscriptions, String nom, Date dateCloture, boolean enEquipe)
