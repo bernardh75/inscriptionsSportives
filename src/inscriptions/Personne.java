@@ -6,6 +6,7 @@ import java.util.TreeSet;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.ManyToMany;
 //import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 //import javax.persistence.OneToOne;
@@ -26,10 +27,11 @@ public class Personne extends Candidat
 	private static final long serialVersionUID = 4434646724271327254L;
 	private String prenom, mail;
 	
-	@OneToMany(targetEntity=Personne.class, mappedBy = "equipes", fetch=FetchType.EAGER)
-	@Cascade(value= { CascadeType.ALL })
+	//@ManyToMany avec le target entity de personne
+	@ManyToMany(mappedBy = "membres", fetch=FetchType.EAGER)
 	@SortNatural
 	private Set<Equipe> equipes;
+	
 	
 	Personne(Inscriptions inscriptions, String nom, String prenom, String mail)
 	{

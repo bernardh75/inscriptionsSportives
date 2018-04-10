@@ -167,15 +167,35 @@ public class DialogUtil {
 	// Selectionner : Competition
 	
 	
+//	private Menu editerCompetition(Competition competition)
+//    {
+//        Menu menu = new Menu("Editer " + competition.getNom() + ((competition.inscriptionsOuvertes()) ? "" : " Inscriptions closes !"), competition.getNom(), "");
+//        menu.add(afficherCompetition(competition));
+//        menu.add(afficherCandidats(competition));
+//        if (!competition.estEnEquipe())
+//        	menu.add(ajouterPersonneCompetition(competition));
+//        if (competition.estEnEquipe())
+//        	menu.add(ajouterEquipeCompetition(competition));
+//        menu.add(supprimerCandidat(competition));
+//        menu.add(modifierCompetition(competition));
+//        menu.add(supprimerCompetition(competition));
+//        menu.addBack("q");
+//        return menu;
+//    }
+	
 	private Menu editerCompetition(Competition competition)
     {
         Menu menu = new Menu("Editer " + competition.getNom() + ((competition.inscriptionsOuvertes()) ? "" : " Inscriptions closes !"), competition.getNom(), "");
         menu.add(afficherCompetition(competition));
         menu.add(afficherCandidats(competition));
+        
+        if(competition.inscriptionsOuvertes()) {
         if (!competition.estEnEquipe())
         	menu.add(ajouterPersonneCompetition(competition));
-        if (competition.estEnEquipe())
-        	menu.add(ajouterEquipeCompetition(competition));
+        else
+        	menu.add(ajouterEquipeCompetition(competition)); 
+        } 
+        	
         menu.add(supprimerCandidat(competition));
         menu.add(modifierCompetition(competition));
         menu.add(supprimerCompetition(competition));
