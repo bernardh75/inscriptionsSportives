@@ -1,6 +1,7 @@
 package inscriptions;
 
 import java.io.Serializable;
+
 import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
@@ -31,8 +32,8 @@ public abstract class Candidat implements Comparable<Candidat>, Serializable
 	
 	private String nom;
 	
-	@ManyToMany(mappedBy = "candidats", fetch=FetchType.EAGER)
-	@Cascade(value= { CascadeType.ALL })
+	@ManyToMany(targetEntity=Competition.class, mappedBy="candidats", fetch=FetchType.EAGER)
+	@Cascade(value = { CascadeType.ALL })
 	@SortNatural
 	private Set<Competition> competitions;
 	

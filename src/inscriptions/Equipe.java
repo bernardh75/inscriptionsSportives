@@ -6,9 +6,6 @@ import java.util.TreeSet;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
-//import javax.persistence.ManyToOne;
-//import javax.persistence.OneToMany;
-//import javax.persistence.OneToOne;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
@@ -19,6 +16,7 @@ import org.hibernate.annotations.SortNatural;
  * s'inscrire à une compétition.
  * 
  */
+
 @Entity
 public class Equipe extends Candidat
 {
@@ -26,6 +24,7 @@ public class Equipe extends Candidat
 	
 	
 	@ManyToMany
+	@Cascade(value = { CascadeType.ALL })
 	@SortNatural
 	private SortedSet<Personne> membres = new TreeSet<>();
 	
