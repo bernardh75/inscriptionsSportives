@@ -7,6 +7,12 @@ import java.util.TreeSet;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
+<<<<<<< HEAD
+=======
+//import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+//import javax.persistence.OneToOne;
+>>>>>>> branch 'master' of https://github.com/bernardh75/InscriptionsSportives
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
@@ -23,9 +29,16 @@ public class Personne extends Candidat
 {
 	private static final long serialVersionUID = 4434646724271327254L;
 	private String prenom, mail;
+<<<<<<< HEAD
 
 	@ManyToMany(targetEntity=Equipe.class, mappedBy="membres", fetch=FetchType.EAGER)
 	@Cascade(value = { CascadeType.ALL })
+=======
+	
+	//@ManyToMany avec le target entity de personne
+	@OneToMany(targetEntity=Personne.class, mappedBy = "equipes", fetch=FetchType.EAGER)
+	@Cascade(value= { CascadeType.ALL })
+>>>>>>> branch 'master' of https://github.com/bernardh75/InscriptionsSportives
 	@SortNatural
 	private Set<Equipe> equipes;
 	
