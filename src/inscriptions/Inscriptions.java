@@ -12,6 +12,7 @@ import java.util.Date;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
+import esDialUtil.DialogUtil;
 import hibernateis.passerelle;
 /**
  * Point d'entrÃ©e dans l'application, un seul objet de type Inscription
@@ -254,17 +255,6 @@ public class Inscriptions implements Serializable
         personnelc.start();
 		
 		lien.close();
-//		Personne tony = inscriptions.createPersonne("tony", "Dent de pomb", "fgg");
-//		
-//		flechettes.add(tony);
-//		
-//		System.out.println(flechettes);
-//		System.out.println(flechettes.getCandidats());
-//		
-//		flechettes.delete();
-//		
-//		System.out.println(flechettes);
-//		
 		
 	}
 

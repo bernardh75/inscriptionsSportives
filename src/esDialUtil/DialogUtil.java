@@ -1,9 +1,11 @@
-package inscriptions;
+package esDialUtil;
 
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
+
+import inscriptions.*;
 import java.util.ArrayList;
 
 import java.util.Date;
@@ -237,7 +239,7 @@ public class DialogUtil {
 				() -> 
 				{
 					competition.setNom(getString("Nouveau nom : \n"));
-					competition.setDateCloture(competition.getDateCloture(), null);
+					competition.setDateCloture(competition.getDateCloture());
 				}
 		);
 	}

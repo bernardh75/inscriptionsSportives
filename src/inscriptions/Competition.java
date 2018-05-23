@@ -117,7 +117,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	 * @param dateCloture
 	 */
 	
-	public void setDateCloture(Date dateCloture, Date newdateCloture)
+	public void setDateCloture(Date dateCloture)
 	{
 		// TODO vérifier que l'on avance pas la date.
 		if (dateCloture.after(this.dateCloture))
