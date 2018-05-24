@@ -22,8 +22,6 @@ import inscriptions.Inscriptions;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-
-
 public class PanelMenus extends JPanel implements ActionListener {
 	
 	private JButton equipe;
@@ -34,7 +32,6 @@ public class PanelMenus extends JPanel implements ActionListener {
 	private JLabel titre;
 	private PanelAffNum page;
 	private JButton retour;
-	//private Inscriptions inscriptions;
 	
 
 	public PanelMenus() {
@@ -54,7 +51,13 @@ public class PanelMenus extends JPanel implements ActionListener {
 	    competition = new JButton("Compétition");
 	    competition.addActionListener(this);
 	    quitter = new JButton("Quitter");
-	    quitter.addActionListener(this);
+	    quitter.addActionListener(new  ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+					System.exit(0);
+			}
+		});
 	    
 	    gbc.gridx = 0;
 	    gbc.gridy = 0;
@@ -76,11 +79,11 @@ public class PanelMenus extends JPanel implements ActionListener {
 	    gbc.gridheight = 2;
 	    gbc.gridwidth = 2;
 	    page.add(competition, gbc);
-//		gbc.gridx = 0;
-//	    gbc.gridy = 8;
-//	    gbc.gridheight = 2;
-//	    gbc.gridwidth = 2;
-//	    page.add(quitter, gbc);
+		gbc.gridx = 0;
+	    gbc.gridy = 8;
+	    gbc.gridheight = 2;
+	    gbc.gridwidth = 2;
+	    page.add(quitter, gbc);
 		
 		
 		label = new JLabel();
@@ -108,8 +111,14 @@ public class PanelMenus extends JPanel implements ActionListener {
 	    personne.addActionListener(this);
 	    competition = new JButton("Compétition");
 	    competition.addActionListener(this);
-//	    quitter = new JButton("Quitter");
-//	    quitter.addActionListener(this);
+	    quitter = new JButton("Quitter");
+	    quitter.addActionListener(new  ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+					System.exit(0);
+			}
+		});
 	    
 	    gbc.gridx = 0;
 	    gbc.gridy = 0;
@@ -131,20 +140,17 @@ public class PanelMenus extends JPanel implements ActionListener {
 	    gbc.gridheight = 2;
 	    gbc.gridwidth = 2;
 	    page.add(competition, gbc);
-//		gbc.gridx = 0;
-//	    gbc.gridy = 8;
-//	    gbc.gridheight = 2;
-//	    gbc.gridwidth = 2;
-//	    page.add(quitter, gbc);
-		
+		gbc.gridx = 0;
+	    gbc.gridy = 8;
+	    gbc.gridheight = 2;
+	    gbc.gridwidth = 2;
+	    page.add(quitter, gbc);
+	    
 
-//		label = new JLabel();
-//		page.add(label);
 		this.add(page, BorderLayout.CENTER);	
-//		retour = new JButton("Retour");
-//		retour.addActionListener(this);
+
 		this.add(retour,BorderLayout.SOUTH);
-//		retour.setVisible(false);
+
 		this.revalidate();
 		}
 	
@@ -213,25 +219,26 @@ public class PanelMenus extends JPanel implements ActionListener {
 		}
 	}
 	@Override
+	
 	public void actionPerformed(ActionEvent arg0) {
 		if(arg0.getSource() == equipe) {
 			this.afficheMenuEquipe();
-			System.out.println("ekip");
+			System.out.println("dans le menu equipe");
 		}
+		
 		if(arg0.getSource() == personne) {
 			this.afficheMenuPersonne();
-			System.out.println("pers");
+			System.out.println("dans le menu personne");
 		}
+		
 		if(arg0.getSource() == competition) {
 			this.afficheMenuCompetition();
-			System.out.println("compet");
+			System.out.println("dans le menu competition");
 		}
-		if(arg0.getSource() == retour) {
-			System.out.println("ok");
-			this.afficheRetour();
-		}
-		    
 		
+		if(arg0.getSource() == retour) {
+			System.out.println("retour effectue");
+			this.afficheRetour();
+		}	    	
 	}
-
 }

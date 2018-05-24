@@ -138,7 +138,7 @@ public class PanelEquipe extends PanelAffNum implements ActionListener{
 		if(x == 0) {
 			JLabel area = new JLabel("Aucune équipe n'est inscrite");
 			test.add(area);
-			System.out.println("NULL");
+			System.out.println("Aucune équipe inscrite");
 		}
 		
 		this.add(test);
@@ -287,10 +287,10 @@ public class PanelEquipe extends PanelAffNum implements ActionListener{
 	    GridBagConstraints gbc = new GridBagConstraints();
 	    list2 = new JComboBox();
 	    selectjoueur = new JButton("Valider");
-		ArrayList<Personne> boug = new ArrayList<Personne>();
-		boug = (ArrayList) passerelle.getData("Personne");
-		System.out.println(boug);
-		for(Personne p : boug) {
+		ArrayList<Personne> perso = new ArrayList<Personne>();
+		perso = (ArrayList) passerelle.getData("Personne");
+		System.out.println(perso);
+		for(Personne p : perso) {
 			list2.addItem(p);
 		}
 		test.add(new JLabel("Selectionner le Joueur a ajouté"));
@@ -318,7 +318,7 @@ public class PanelEquipe extends PanelAffNum implements ActionListener{
 			x += 1;
 		}
 		if(x == 0) {
-			JLabel area = new JLabel("Aucune joueurs n'est inscrit dans l'équipe");
+			JLabel area = new JLabel("Aucun joueur n'est inscrit dans l'équipe");
 			test.add(area);
 			System.out.println("NULL");
 		}
@@ -345,8 +345,10 @@ public class PanelEquipe extends PanelAffNum implements ActionListener{
 		if(e.getSource() == valider) {
 			String nomEquipe = text.getText();
 			Equipe team = Inscriptions.getInscriptions().createEquipe (nomEquipe);
-			System.out.println("L'équipe, " + nomEquipe + " a était créée avec succés");
+			System.out.println("L'équipe, " + nomEquipe + " a été créée avec succès");
 			text.setText("");
+			
+			JOptionPane.showMessageDialog(this, "L'équipe, " + nomEquipe + " a été créée avec succès");
 		}
 		if(e.getSource() == selectequipe) {
 			this.menuequipebis();
@@ -367,6 +369,8 @@ public class PanelEquipe extends PanelAffNum implements ActionListener{
 		if(e.getSource() == supprimerequipe) {
 			equipeCourante = (Equipe) list.getSelectedItem();  
 			System.out.println(equipeCourante.getNom());
+			
+			JOptionPane.showMessageDialog(this, "L'équipe, " + equipeCourante.getNom() + " a bien été supprimée ");
 			equipeCourante.delete();
 		}
 		if(e.getSource() == ajoutereq) {

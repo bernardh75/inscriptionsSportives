@@ -208,9 +208,9 @@ public class PanelCompetition extends PanelAffNum implements ActionListener{
 			x += 1;
 		}
 		if(x == 0) {
-			JLabel area = new JLabel("Aucune competition n'est créee");
+			JLabel area = new JLabel("Aucune competition n'est créée");
 			test.add(area);
-			System.out.println("NULL");
+			System.out.println("Aucune competition créée");
 		}
 		
 		this.add(test);
@@ -358,7 +358,7 @@ public class PanelCompetition extends PanelAffNum implements ActionListener{
 					list2.addItem(c);
 			}
 		}
-		test.add(new JLabel("Selectionner le Candidat a ajouté"));
+		test.add(new JLabel("Selectionner le Candidat à ajouter"));
 		test.add(list2);
 		test.add(selectcandidat);
 		selectcandidat.addActionListener(this);
@@ -400,7 +400,7 @@ public class PanelCompetition extends PanelAffNum implements ActionListener{
 				else
 					enEquipe = false;
 				Inscriptions.getInscriptions().createCompetition(nomCompet, localDate, enEquipe);
-	            System.out.println("La compétition, " + nomCompet + " a était créée avec succés");
+	            System.out.println("La compétition, " + nomCompet + " a était créée avec succès");
 			} catch (ParseException e1) {
 				System.out.println("Veuillez respecter le format de la date 'yyyy-mm-dd' ! " + e1);
 			}

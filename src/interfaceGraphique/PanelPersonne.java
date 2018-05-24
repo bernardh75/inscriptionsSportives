@@ -30,7 +30,7 @@ public class PanelPersonne extends PanelAffNum implements ActionListener{
 	private JButton selectionner;
 	private JButton supprimer;
 	private JButton editer;
-	private JButton editerr;
+	private JButton editerfin;
 	private JLabel titre;
 	private JLabel label2;
 	private JLabel label3;
@@ -159,9 +159,9 @@ public class PanelPersonne extends PanelAffNum implements ActionListener{
 		JPanel test = new JPanel();
 		test.setLayout(new GridBagLayout());
 	    GridBagConstraints gbc = new GridBagConstraints();
-		ArrayList<Personne> boug = new ArrayList<Personne>();
-		boug = (ArrayList) passerelle.getData("Personne");
-		for(Personne p : boug) {
+		ArrayList<Personne> perso = new ArrayList<Personne>();
+		perso = (ArrayList) passerelle.getData("Personne");
+		for(Personne p : perso) {
 			JLabel area = new JLabel();
 			area.setText(p.getPrenom() + " " + p.getNom() + " - " + p.getMail());
 			gbc.gridy = x;
@@ -171,7 +171,7 @@ public class PanelPersonne extends PanelAffNum implements ActionListener{
 		if(x == 0) {
 			JLabel area = new JLabel("Aucun sportif n'est inscrit");
 			test.add(area);
-			System.out.println("NULL");
+			System.out.println("Aucun sportif inscrit");
 		}
 		
 		this.add(test);
@@ -228,8 +228,8 @@ public class PanelPersonne extends PanelAffNum implements ActionListener{
 		validerr = new JButton("Valider");
 		validerr.addActionListener(this);
 		
-		editerr = new JButton("Editer");
-		editerr.addActionListener(this);
+		editerfin = new JButton("Editer");
+		editerfin.addActionListener(this);
 		
 		gbc.gridx = 0;
 	    gbc.gridy = 0;
@@ -269,14 +269,14 @@ public class PanelPersonne extends PanelAffNum implements ActionListener{
 		
 		gbc.gridx = 2;
 	    gbc.gridy = 3;
-		test.add(editerr, gbc);
+		test.add(editerfin, gbc);
 		label2.setVisible(false);
 		prenomedit.setVisible(false);
 		label3.setVisible(false);
 		nomedit.setVisible(false);
 		label4.setVisible(false);
 		mailedit.setVisible(false);
-		editerr.setVisible(false);
+		editerfin.setVisible(false);
 		this.add(test);
 		this.revalidate();
 	}
@@ -304,22 +304,25 @@ public class PanelPersonne extends PanelAffNum implements ActionListener{
 			String smail = mail.getText();
 			Personne pers = Inscriptions.getInscriptions().createPersonne(snom, sprenom, smail);
 			System.out.println(pers.getNom() + " " + pers.getPrenom() + ", a été créé(e) avec succès" + " son mail est : " + pers.getMail());
+			JOptionPane.showMessageDialog(this, pers.getNom() + " " + pers.getPrenom() + ", a été créé(e) avec succès" + " son mail est : " + pers.getMail());
 		}
 		
 		if(e.getSource() == suppr) {
 			System.out.println("On supprime");
-			ArrayList<Personne> boug = new ArrayList<Personne>();
-			boug = (ArrayList) passerelle.getData("Personne");
+			ArrayList<Personne> perso = new ArrayList<Personne>();
+			perso = (ArrayList) passerelle.getData("Personne");
 			for(Personne p : Inscriptions.getInscriptions().getPersonnes()) {
 				if(p.getMail().equals(mailsupp.getText())) {
 					p.delete();
 					String nom = p.getNom();
 					String prenom = p.getPrenom();
 					System.out.println(prenom + " " + nom + ", a bien été supprimé(e)");
-					
+			            JOptionPane.showMessageDialog(this,
+			                    "Le sportif " + prenom + " " + nom + " a bien été supprimé !" );
+			        }
 				}
 			}
-		}
+		
 		if(e.getSource() == validerr) {
 			for(Personne p : Inscriptions.getInscriptions().getPersonnes()) {
 				if(p.getMail().equals(maill.getText())) {
@@ -331,11 +334,11 @@ public class PanelPersonne extends PanelAffNum implements ActionListener{
 					nomedit.setVisible(true);
 					label4.setVisible(true);
 					mailedit.setVisible(true);
-					editerr.setVisible(true);
+					editerfin.setVisible(true);
 				}
 			}
 		}
-		if(e.getSource() == editerr) {
+		if(e.getSource() == editerfin) {
 			for(Personne p : Inscriptions.getInscriptions().getPersonnes()) {
 				if(p.getMail().equals(maill.getText())) {
 					p.setNom(nomedit.getText());
@@ -344,6 +347,7 @@ public class PanelPersonne extends PanelAffNum implements ActionListener{
 				}
 			}
 			System.out.println("Le sportif a bien été édité.");
+			JOptionPane.showMessageDialog(this, "Le sportif a bien été édité !" );
 		}
 	}
 }
